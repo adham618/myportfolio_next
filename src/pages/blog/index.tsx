@@ -2,17 +2,16 @@ import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
-import Skeleton from '@/components/Skeleton';
 
-export default function IndexPage() {
+export default function BlogPage() {
   return (
     <Layout>
-      <Seo templateTitle='Index' />
+      <Seo templateTitle='Blog' />
 
       <main>
         <section className=''>
-          <div className='container min-h-screen py-20'>
-            <Skeleton />
+          <div className='container mx-auto min-h-screen py-20'>
+            bbbbbbbbbbbbbbbbbbbb
           </div>
         </section>
       </main>
