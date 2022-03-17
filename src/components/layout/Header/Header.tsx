@@ -46,8 +46,7 @@ export default function Header() {
                     <a
                       className={clsx(
                         'text-gray-500',
-                        router.pathname === href &&
-                          'border-b-2 border-primary text-base-content'
+                        router.pathname === href && 'text-primary-focus'
                       )}
                     >
                       {label}
