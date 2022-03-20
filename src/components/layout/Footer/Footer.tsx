@@ -2,18 +2,17 @@
 import * as React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { BsGithub } from 'react-icons/bs';
-import { FaLinkedin, FaSlackHash } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import { MdOutlineMail } from 'react-icons/md';
+
+import Logo from '@/components/SVG/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click the mail logo to copy');
   return (
-    <footer className='footer footer-center mx-auto w-5/6 border-y border-base-300 bg-base-100 p-10'>
+    <footer className='footer footer-center mx-auto w-full border-y border-base-300 bg-base-100 p-10'>
       <div>
-        <FaSlackHash className='h-12 w-12 text-base-content' />
-        <p className='font-bold'>
-          Adham Tarek <br />
-          Providing reliable tech since 2021
-        </p>
+        <Logo />
+        <p className='font-bold'>Providing reliable tech since 2021</p>
         <p>
           Copyright © {new Date().getFullYear()} - All right reserved by{' '}
           <a

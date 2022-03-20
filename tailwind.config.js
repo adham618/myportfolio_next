@@ -63,19 +63,3 @@ module.exports = {
     darkTheme: 'dark',
   },
 };
-
-// dark: {
-//           ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
-//           primary: '#0F172A',
-//           'primary-content': '#B3C5EF',
-//           secondary: '#D926AA',
-//           'secondary-content': '#ffffff',
-//           accent: '#1FB2A5',
-//           'accent-content': '#ffffff',
-//           neutral: '#191D24',
-//           'neutral-focus': '#111318',
-//           'neutral-content': '#A6ADBB',
-//           'base-100': '#29303C',
-//           'base-200': '#242933',
-//           'base-300': '#20252E',
-//           'base-content': '#A6ADBB',

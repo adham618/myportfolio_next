@@ -5,6 +5,7 @@ import * as React from 'react';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 
+import Logo from '../../SVG/Logo';
 import ThemeToggle from '../../ThemeToggle';
 
 const links = [
@@ -22,18 +23,10 @@ export default function Header() {
       <div className='container mx-auto flex h-14 items-center justify-between'>
         <div className='flex items-center justify-between gap-3'>
           <div
-            className='cursor-pointer text-xl  font-bold normal-case'
+            className=' w-28 cursor-pointer text-xl  font-bold normal-case'
             onClick={() => router.push('/')}
           >
-            {/* <AiOutlineSlack className='h-3 w-11 text-primary md:h-9 md:w-9' /> */}
-            <p className='w-16 font-mono leading-5 text-primary'>ADHAM</p>
-          </div>
-          <div className='form-control w-full sm:ml-2'>
-            <input
-              type='text'
-              placeholder='Search'
-              className='input input-bordered h-9  md:w-auto'
-            />
+            <Logo />
           </div>
         </div>
         <div className='flex items-center justify-between '>
