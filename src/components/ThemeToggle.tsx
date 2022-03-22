@@ -1,26 +1,14 @@
-import * as React from 'react';
-import { useEffect } from 'react';
-import { BiMoon } from 'react-icons/bi';
-import { CgSun } from 'react-icons/cg';
+import { useTheme } from 'next-themes';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 export default function ThemeToggle() {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const { themeChange } = require('theme-change');
-  useEffect(() => {
-    themeChange(false);
-  }, [themeChange]);
+  const { theme, setTheme } = useTheme();
   return (
-    <div className='ml-5 flex rounded-md p-1.5 hover:text-primary-focus '>
-      <label className='swap swap-rotate'>
-        <input
-          type='checkbox'
-          data-toggle-theme='dark,light'
-          data-act-class='ACTIVECLASS'
-          className='hidden'
-        />
-        <CgSun className='swap-on h-5 w-5 fill-current' />
-        <BiMoon className='swap-off h-5 w-5 fill-current' />
-      </label>
-    </div>
+    <button
+      className='rounded-md p-2.5  hover:text-primary-300 focus:outline-none  focus-visible:text-primary-300  dark:text-white dark:hover:text-primary-300 dark:focus-visible:text-primary-300'
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    >
+      {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+    </button>
   );
 }
