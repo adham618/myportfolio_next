@@ -10,11 +10,9 @@ export default function NotFoundPage() {
       <Seo templateTitle='Not Found' />
 
       <main>
-        <section className='bg-base-100'>
-          <div className='container mx-auto flex min-h-screen flex-col items-center justify-center text-center text-black'>
-            <h1 className='text-4xl text-base-content  md:text-6xl'>
-              Page Not Found
-            </h1>
+        <section className='bg-base-100 dark:text-white'>
+          <div className='container mx-auto flex min-h-screen flex-col items-center justify-center text-center'>
+            <h1 className='text-4xl md:text-6xl'>Page Not Found</h1>
             <Link href='/'>
               <a className='btn btn-primary mt-8 md:text-lg'>Back to Home</a>
             </Link>
