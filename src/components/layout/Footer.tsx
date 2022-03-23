@@ -12,7 +12,7 @@ import Logo from '@/components/SVG/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click the mail logo to copy');
   return (
-    <footer className='footer footer-center mx-auto w-full border-t py-10 dark:border-none dark:bg-[#0c071a] dark:text-gray-200'>
+    <footer className='footer footer-center mx-auto w-full border-t py-10 dark:border-none dark:bg-[#111C31] dark:text-gray-200'>
       <div>
         <Logo />
         <p className='font-bold'>Providing reliable service since 2020</p>

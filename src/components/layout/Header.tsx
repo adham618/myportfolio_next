@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <header
       className={`${
-        onTop ? '' : 'shadow-sm dark:bg-[#0e081e]'
+        onTop ? '' : 'shadow-sm dark:bg-[#111C31]'
       } sticky top-0 z-50 bg-white transition-shadow dark:bg-dark`}
     >
       {/* <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div> */}
