@@ -71,7 +71,7 @@ export default function Header() {
                 onClick={() => setopen(!open)}
                 className='absolute top-0 left-0 h-screen w-full cursor-pointer bg-dark opacity-30 md:hidden'
               ></div>
-              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-[#0e081e] dark:text-slate-400 md:hidden'>
+              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-[#131b2e] dark:text-slate-400 md:hidden'>
                 <div className='m-4'>
                   <IoClose
                     onClick={() => setopen(!open)}
