@@ -52,7 +52,6 @@ export default function Header() {
                 <li key={`${href}${label}`}>
                   <Link href={href}>
                     <a
-                      aria-label={label}
                       className={clsx(
                         ' hover:text-primary-800 dark:text-slate-400',
                         router.pathname === href &&
@@ -90,7 +89,6 @@ export default function Header() {
                     <li key={`${href}${label}`} onClick={() => setopen(!open)}>
                       <Link href={href}>
                         <a
-                          aria-label={label}
                           className={clsx(
                             'dark:text-slate-400',
                             router.pathname === href &&

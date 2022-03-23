@@ -62,6 +62,7 @@ export default function Footer() {
               href='https://github.com/adham618'
               target='_blank'
               rel='noreferrer'
+              aria-label='linkedin'
             >
               <BsGithub className='h-6 w-6 cursor-pointer' />
             </a>
@@ -81,6 +82,7 @@ export default function Footer() {
               href='https://www.linkedin.com/in/adham-tarek/'
               target='_blank'
               rel='noreferrer'
+              aria-label='linkedin'
             >
               <FaLinkedin className='h-6 w-6 cursor-pointer' />
             </a>
