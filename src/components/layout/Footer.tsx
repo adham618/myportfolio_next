@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
       </div>
       <ScrollToTop
-        className='fixed right-10 bottom-10 z-50 h-10  w-10 rounded-md border border-dark bg-white text-black shadow-sm dark:bg-[#0E081E] dark:text-white'
+        className='fixed right-10 bottom-10 z-50 h-10  w-10 rounded-md border border-dark bg-white text-black shadow-sm dark:bg-[#111C31] dark:text-white'
         smooth
         component={<AiOutlineArrowUp className='h-6 w-6' />}
       />
