@@ -36,6 +36,9 @@ module.exports = {
           900: withOpacityValue('--tw-color-primary-900'),
         },
         dark: '#1E293B',
+        content: 'slate-500',
+        contentdark: 'slate-400',
+        bgcontent: '#1E293B',
       },
       keyframes: {
         flicker: {
