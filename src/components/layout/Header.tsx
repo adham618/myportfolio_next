@@ -31,12 +31,13 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   });
-
   return (
     <header
       className={`${
-        onTop ? '' : 'shadow-sm dark:bg-[#111C31]'
-      } sticky top-0 z-50 bg-white transition-shadow dark:bg-dark`}
+        onTop
+          ? ''
+          : 'shadow-sm dark:border-b-[0.2px] dark:border-slate-300/10 dark:bg-[#131b2e]'
+      } sticky top-0 z-50 bg-white  transition-shadow dark:bg-dark`}
     >
       {/* <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div> */}
 
@@ -52,7 +53,7 @@ export default function Header() {
                   <Link href={href}>
                     <a
                       className={clsx(
-                        ' dark:text-white',
+                        ' hover:text-primary-800 dark:text-slate-400',
                         router.pathname === href &&
                           'font-bold text-primary-800 dark:font-bold dark:text-primary-800'
                       )}
@@ -70,7 +71,7 @@ export default function Header() {
                 onClick={() => setopen(!open)}
                 className='absolute top-0 left-0 h-screen w-full cursor-pointer bg-dark opacity-30 md:hidden'
               ></div>
-              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-[#0e081e] dark:text-white md:hidden'>
+              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-[#0e081e] dark:text-slate-400 md:hidden'>
                 <div className='m-4'>
                   <IoClose
                     onClick={() => setopen(!open)}
@@ -89,7 +90,7 @@ export default function Header() {
                       <Link href={href}>
                         <a
                           className={clsx(
-                            'dark:text-white',
+                            'dark:text-slate-400',
                             router.pathname === href &&
                               'bg-primary-900 text-white'
                           )}
@@ -109,7 +110,7 @@ export default function Header() {
             onClick={() => setopen(!open)}
             className='ml-3 cursor-pointer md:hidden'
           >
-            <HiOutlineMenu className='inline-block h-6 w-6 stroke-current dark:text-white' />
+            <HiOutlineMenu className='inline-block h-6 w-6 stroke-current dark:text-slate-400' />
           </div>
         </div>
       </div>
