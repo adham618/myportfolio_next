@@ -30,8 +30,8 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main>
-        <section>
-          <div className='container mx-auto mt-14 flex min-h-screen flex-col items-center justify-center text-center'></div>
+        <section className='bg-white dark:bg-dark'>
+          <div className='container mx-auto flex min-h-screen flex-col items-center justify-center text-center'></div>
         </section>
       </main>
     </Layout>

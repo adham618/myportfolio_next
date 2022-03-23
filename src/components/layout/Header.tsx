@@ -35,12 +35,12 @@ export default function Header() {
   return (
     <header
       className={`${
-        onTop ? '' : 'shadow-sm'
-      } sticky top-0 z-50 transition-shadow`}
+        onTop ? '' : 'shadow-sm dark:bg-[#0e081e]'
+      } sticky top-0 z-50 bg-white transition-shadow dark:bg-dark`}
     >
-      <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div>
+      {/* <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div> */}
 
-      <div className='container mx-auto flex h-16 items-center justify-between px-2'>
+      <div className='container mx-auto flex h-14 items-center justify-between px-2'>
         <div className='cursor-pointer' onClick={() => router.push('/')}>
           <Logo />
         </div>
@@ -70,7 +70,7 @@ export default function Header() {
                 onClick={() => setopen(!open)}
                 className='absolute top-0 left-0 h-screen w-full cursor-pointer bg-dark opacity-30 md:hidden'
               ></div>
-              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-dark dark:text-white md:hidden'>
+              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-[#0e081e] dark:text-white md:hidden'>
                 <div className='m-4'>
                   <IoClose
                     onClick={() => setopen(!open)}
@@ -85,11 +85,7 @@ export default function Header() {
                 </div>
                 <ul className='menu mt-8 w-72 overflow-y-auto'>
                   {links.map(({ href, label }) => (
-                    <li
-                      key={`${href}${label}`}
-                      onClick={() => setopen(!open)}
-                      className='border'
-                    >
+                    <li key={`${href}${label}`} onClick={() => setopen(!open)}>
                       <Link href={href}>
                         <a
                           className={clsx(

@@ -1,14 +1,15 @@
 import { useTheme } from 'next-themes';
-import { FiMoon, FiSun } from 'react-icons/fi';
+import { FiSun } from 'react-icons/fi';
+import { IoMoon } from 'react-icons/io5';
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   return (
     <button
-      className='rounded-md p-2.5  hover:text-primary-300 focus:outline-none  focus-visible:text-primary-300  dark:text-white dark:hover:text-primary-300 dark:focus-visible:text-primary-300'
+      className='border-none focus:outline-none  dark:text-white '
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
-      {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+      {theme === 'light' ? <IoMoon size={18} /> : <FiSun size={18} />}
     </button>
   );
 }
