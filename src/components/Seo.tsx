@@ -8,9 +8,9 @@ const defaultMeta = {
   title: 'ADHAM TAREK',
   siteName: 'ADHAM TAREK',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+    'An online portfolio and blog by Adham Tarek. Showcase of my projects, and some of my thoughts about website development.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://adham-tarek.com',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
@@ -20,6 +20,8 @@ const defaultMeta = {
 type SeoProps = {
   date?: string;
   templateTitle?: string;
+  isBlog?: boolean;
+  banner?: string;
 } & Partial<typeof defaultMeta>;
 
 export default function Seo(props: SeoProps) {
@@ -38,6 +40,8 @@ export default function Seo(props: SeoProps) {
     description: meta.description,
     siteName: props.templateTitle ? meta.siteName : meta.title,
     templateTitle: props.templateTitle,
+    banner: props.banner,
+    isBlog: props.isBlog,
   });
 
   return (
@@ -96,7 +100,6 @@ type Favicons = {
   type?: string;
 };
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://www.favicon-generator.org/ then replace the whole /public/favicon folder
 const favicons: Array<Favicons> = [
   {
     rel: 'apple-touch-icon',
