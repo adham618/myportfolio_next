@@ -31,7 +31,7 @@ export default function HomePage() {
       <Seo />
       <main>
         <section className='bg-white dark:bg-dark'>
-          <div className='container mx-auto flex min-h-screen flex-col items-center justify-center text-center'></div>
+          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'></div>
         </section>
       </main>
     </Layout>

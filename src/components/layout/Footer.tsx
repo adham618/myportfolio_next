@@ -12,11 +12,15 @@ import Logo from '@/components/SVG/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click the mail logo to copy');
   return (
-    <footer className='footer footer-center mx-auto w-full border-t py-10 dark:border-none dark:bg-[#131b2e] dark:text-gray-200'>
+    <footer className='footer footer-center bottom-0 mx-auto w-full border-t bg-primary py-10 text-content-dark dark:border-none'>
       <div>
-        <Logo />
-        <p className='font-bold'>Providing reliable service since 2020</p>
-        <p>© {new Date().getFullYear()} Adham Tarek - All rights reserved. </p>
+        <div className='text-slate-300'>
+          <Logo />
+        </div>
+        <p className='font-bold text-slate-300'>
+          Providing reliable service since 2020
+        </p>
+        <p>Copyright © {new Date().getFullYear()} - All rights reserved. </p>
         <FeedbackFish
           projectId={process.env.NEXT_PUBLIC_FEEDBACKFISH as string}
         >
@@ -25,7 +29,7 @@ export default function Footer() {
         <div className='mt-3 grid grid-flow-col gap-4'>
           <Tooltip
             html={
-              <div className='mb-2 inline-block rounded-sm border bg-white p-2 text-xs text-gray-600 shadow-md dark:border-gray-600 dark:bg-dark dark:text-gray-200 '>
+              <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
                 {copied}
               </div>
             }
@@ -49,7 +53,7 @@ export default function Footer() {
           </Tooltip>
           <Tooltip
             html={
-              <div className='mb-2 inline-block rounded-sm border bg-white p-2 text-xs text-gray-600 shadow-md dark:border-gray-600 dark:bg-dark dark:text-gray-200 '>
+              <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
                 See my projects on Github
               </div>
             }
@@ -69,7 +73,7 @@ export default function Footer() {
           </Tooltip>
           <Tooltip
             html={
-              <div className='mb-2 inline-block rounded-sm border bg-white p-2 text-xs text-gray-600 shadow-md dark:border-gray-600 dark:bg-dark dark:text-gray-200 '>
+              <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
                 Find me on Linkedin
               </div>
             }
@@ -90,7 +94,7 @@ export default function Footer() {
         </div>
       </div>
       <ScrollToTop
-        className='fixed right-10 bottom-10 z-50 h-10  w-10 rounded-md border border-black bg-white shadow-sm  dark:border-none dark:bg-[#101624] dark:text-slate-400'
+        className='fixed right-10 bottom-10 z-50 h-10  w-10 rounded-md bg-primary-focus  shadow-sm'
         smooth
         component={<AiOutlineArrowUp className='h-6 w-6' />}
       />

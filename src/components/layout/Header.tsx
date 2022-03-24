@@ -12,7 +12,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/contact-us', label: 'Contact' },
 ];
 
 export default function Header() {
@@ -36,13 +36,16 @@ export default function Header() {
       className={`${
         onTop
           ? ''
-          : 'shadow-sm dark:border-b-[0.2px] dark:border-slate-300/10 dark:bg-[#131b2e]'
-      } sticky top-0 z-50 bg-white  transition-shadow dark:bg-dark`}
+          : 'shadow-sm dark:border-b-[0.2px] dark:border-none dark:border-slate-300/10 dark:bg-primary'
+      } sticky  top-0 z-50 bg-opacity-90  backdrop-blur-lg  transition-shadow dark:bg-dark dark:bg-opacity-90 dark:backdrop-blur-lg `}
     >
       {/* <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div> */}
 
-      <div className='container mx-auto flex h-14 items-center justify-between px-2'>
-        <div className='cursor-pointer' onClick={() => router.push('/')}>
+      <div className='layout flex h-14 items-center justify-between px-2'>
+        <div
+          className='cursor-pointer text-primary'
+          onClick={() => router.push('/')}
+        >
           <Logo />
         </div>
         <div className='flex items-center justify-between '>
@@ -53,9 +56,9 @@ export default function Header() {
                   <Link href={href}>
                     <a
                       className={clsx(
-                        ' hover:text-primary-800 dark:text-slate-400',
+                        ' hover:text-primary-focus dark:text-content-dark dark:hover:text-primary-content',
                         router.pathname === href &&
-                          'font-bold text-primary-800 dark:font-bold dark:text-primary-800'
+                          'font-bold text-primary-focus dark:font-bold dark:text-primary-content'
                       )}
                     >
                       {label}
@@ -71,7 +74,7 @@ export default function Header() {
                 onClick={() => setopen(!open)}
                 className='absolute top-0 left-0 h-screen w-full cursor-pointer bg-dark opacity-30 md:hidden'
               ></div>
-              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-[#131b2e] dark:text-slate-400 md:hidden'>
+              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-primary dark:text-primary-content md:hidden'>
                 <div className='m-4'>
                   <IoClose
                     onClick={() => setopen(!open)}
@@ -90,9 +93,9 @@ export default function Header() {
                       <Link href={href}>
                         <a
                           className={clsx(
-                            'dark:text-slate-400',
+                            '',
                             router.pathname === href &&
-                              'bg-primary-900 text-white'
+                              'bg-primary-focus text-primary-content'
                           )}
                         >
                           {label}
