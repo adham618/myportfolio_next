@@ -6,11 +6,11 @@ interface AboutPageProps {
   data: {
     attributes: {
       title: string;
-      content: HTMLElement;
+      content: string;
     };
   };
 }
-export default function AboutPage({ data }: AboutPageProps) {
+export default function AboutlPage({ data }: AboutPageProps) {
   return (
     <Layout>
       <Seo templateTitle='About' />
@@ -19,7 +19,12 @@ export default function AboutPage({ data }: AboutPageProps) {
         <section className='dark:bg-dark'>
           <div className='dark:text-contentdark layout min-h-screen py-20 text-content'>
             <h1>{data.attributes.title}</h1>
-            <div>{data.attributes.content}</div>
+            <>
+              {JSON.stringify(data.attributes.content).replace(
+                /\s|&nbsp;/g,
+                ''
+              )}
+            </>
           </div>
         </section>
       </main>
@@ -27,8 +32,7 @@ export default function AboutPage({ data }: AboutPageProps) {
   );
 }
 export const getStaticProps = async () => {
-  const NEXT_PUBLIC_API_URL =
-    process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337';
+  const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
   const res = await fetch(`${NEXT_PUBLIC_API_URL}/api/about`);
   const data = await res.json();
   if (!data) {
