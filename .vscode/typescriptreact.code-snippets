@@ -91,7 +91,7 @@
       "      <Seo templateTitle='${1:${TM_FILENAME_BASE/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}}' />\n",
       "      <main>\n",
       "        <section className=''>",
-      "          <div className='container mx-auto py-20 min-h-screen'>",
+      "          <div className='layout py-20 min-h-screen'>",
       "            $0",
       "          </div>",
       "        </section>",
