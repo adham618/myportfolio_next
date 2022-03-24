@@ -31,17 +31,17 @@ export default function AboutlPage({ data }: AboutPageProps) {
     </Layout>
   );
 }
-export const getStaticProps = async () => {
-  const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
-  const res = await fetch(`${NEXT_PUBLIC_API_URL}/api/about`);
-  const data = await res.json();
-  if (!data) {
-    return {
-      notFound: true,
-    };
-  }
-  return {
-    props: { data: data.data },
-    revalidate: 1,
-  };
-};
+// export const getStaticProps = async () => {
+//   const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
+//   const res = await fetch(`${NEXT_PUBLIC_API_URL}/api/about`);
+//   const data = await res.json();
+//   if (!data) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+//   return {
+//     props: { data: data.data },
+//     revalidate: 1,
+//   };
+// };
