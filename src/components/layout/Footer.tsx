@@ -10,7 +10,7 @@ import { Tooltip } from 'react-tippy';
 
 import Logo from '@/components/SVG/Logo';
 export default function Footer() {
-  const [copied, setcopied] = React.useState('Click the mail logo to copy');
+  const [copied, setcopied] = React.useState('Click The Mail Logo To Copy');
   return (
     <footer className='footer footer-center bottom-0 mx-auto w-full border-t bg-primary py-10 text-content-dark dark:border-none'>
       <div>
@@ -43,7 +43,7 @@ export default function Footer() {
               onCopy={() => {
                 setcopied('Copied');
                 setTimeout(
-                  () => setcopied('Click the mail logo to copy'),
+                  () => setcopied('Click The Mail Logo To Copy'),
                   1500
                 );
               }}
@@ -54,7 +54,7 @@ export default function Footer() {
           <Tooltip
             html={
               <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
-                See my projects on Github
+                See My Projects On Github
               </div>
             }
             hideOnClick={false}
@@ -74,7 +74,7 @@ export default function Footer() {
           <Tooltip
             html={
               <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
-                Find me on Linkedin
+                Find Me On Linkedin
               </div>
             }
             hideOnClick={false}
