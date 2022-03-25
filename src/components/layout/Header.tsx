@@ -41,7 +41,7 @@ export default function Header() {
     >
       {/* <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div> */}
 
-      <div className='layout flex h-14 items-center justify-between px-2'>
+      <div className='layout flex h-16 items-center justify-between px-2'>
         <div
           className='cursor-pointer text-primary'
           onClick={() => router.push('/')}

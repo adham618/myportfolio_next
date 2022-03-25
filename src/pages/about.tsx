@@ -56,8 +56,12 @@ export default function AboutPage() {
       <Seo templateTitle='About' />
 
       <main>
-        <section className=''>
-          <div className='layout min-h-screen py-20'></div>
+        <section className='dark:bg-primary'>
+          <div className='layout min-h-screen py-20'>
+            <h2 className='text-stroke mb-4  text-7xl font-black leading-[0.7em] text-black text-transparent  dark:text-white md:text-[10vw] xl:text-[10rem]'>
+              About
+            </h2>
+          </div>
         </section>
       </main>
     </Layout>
