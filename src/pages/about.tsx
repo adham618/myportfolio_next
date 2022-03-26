@@ -1,7 +1,7 @@
-// import * as React from 'react';
+import * as React from 'react';
 
-// import Layout from '@/components/layout/Layout';
-// import Seo from '@/components/Seo';
+import Layout from '@/components/layout/Layout';
+import Seo from '@/components/Seo';
 // interface AboutPageProps {
 //   data: {
 //     attributes: {
@@ -10,60 +10,64 @@
 //     };
 //   };
 // }
-// export default function AboutlPage({ data }: AboutPageProps) {
-//   return (
-//     <Layout>
-//       <Seo templateTitle='About' />
-
-//       <main>
-//         <section className='dark:bg-dark'>
-//           <div className='dark:text-contentdark layout min-h-screen py-20 text-content'>
-//             <h1>{data.attributes.title}</h1>
-//             <>
-//               {JSON.stringify(data.attributes.content).replace(
-//                 /\s|&nbsp;/g,
-//                 ''
-//               )}
-//             </>
-//           </div>
-//         </section>
-//       </main>
-//     </Layout>
-//   );
-// }
-// // export const getStaticProps = async () => {
-// //   const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
-// //   const res = await fetch(`${NEXT_PUBLIC_API_URL}/api/about`);
-// //   const data = await res.json();
-// //   if (!data) {
-// //     return {
-// //       notFound: true,
-// //     };
-// //   }
-// //   return {
-// //     props: { data: data.data },
-// //     revalidate: 1,
-// //   };
-// // };
-import * as React from 'react';
-
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
-
 export default function AboutPage() {
   return (
     <Layout>
       <Seo templateTitle='About' />
 
       <main>
-        <section className='dark:bg-primary'>
-          <div className='layout min-h-screen py-20'>
-            <h2 className='text-stroke mb-4  text-7xl font-black leading-[0.7em] text-black text-transparent  dark:text-white md:text-[10vw] xl:text-[10rem]'>
-              About
-            </h2>
+        <section className='dark:bg-dark'>
+          <div className='layout min-h-screen py-16  text-content dark:text-content-dark'>
+            <h1 className='mb-5'>About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque provident necessitatibus aliquam iusto id magni! Amet
+              fuga quo quisquam, quasi voluptatibus nesciunt optio ullam dolore
+              esse quos repellendus. Dignissimos, voluptatem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque provident necessitatibus aliquam iusto id magni! Amet
+              fuga quo quisquam, quasi voluptatibus nesciunt optio ullam dolore
+              esse quos repellendus. Dignissimos, voluptatem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque provident necessitatibus aliquam iusto id magni! Amet
+              fuga quo quisquam, quasi voluptatibus nesciunt optio ullam dolore
+              esse quos repellendus. Dignissimos, voluptatem. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Doloremque provident
+              necessitatibus aliquam iusto id magni!
+            </p>
+            <p>
+              Amet fuga quo quisquam, quasi voluptatibus nesciunt optio ullam
+              dolore esse quos repellendus. Dignissimos, voluptatem. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Doloremque provident
+              necessitatibus aliquam iusto id magni! Amet fuga quo quisquam,
+              quasi voluptatibus nesciunt optio ullam dolore esse quos
+              repellendus. Dignissimos, voluptatem. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Doloremque provident necessitatibus
+              aliquam iusto id magni! Amet fuga quo quisquam, quasi voluptatibus
+              nesciunt optio ullam dolore esse quos repellendus. Dignissimos,
+              voluptatem.
+            </p>
           </div>
         </section>
       </main>
     </Layout>
   );
 }
+// export const getStaticProps = async () => {
+//   const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL;
+//   const res = await fetch(`${NEXT_PUBLIC_API_URL}/api/about`);
+//   const data = await res.json();
+//   if (!data) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+//   return {
+//     props: { data: data.data },
+//     revalidate: 1,
+//   };
+// };
