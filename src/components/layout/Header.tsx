@@ -11,6 +11,7 @@ import ThemeToggle from '../ThemeToggle';
 const links = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '#services', label: 'Services' },
   { href: '/projects', label: 'Projects' },
   { href: '/contact-us', label: 'Contact' },
 ];
@@ -39,8 +40,6 @@ export default function Header() {
           : 'shadow-sm dark:border-b-[0.2px] dark:border-none dark:border-slate-300/10 dark:bg-primary'
       } sticky  top-0 z-50 bg-opacity-90  backdrop-blur-lg  transition-shadow dark:bg-dark dark:bg-opacity-90 dark:backdrop-blur-lg `}
     >
-      {/* <div className='h-2 bg-gradient-to-tr from-primary-500 via-primary-200 to-primary-800'></div> */}
-
       <div className='layout flex h-16 items-center justify-between px-2'>
         <div
           className='cursor-pointer text-primary'
