@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
+import Layout from '@/components/Layout';
 import Seo from '@/components/Seo';
 
 export default function ContactUSPage() {
