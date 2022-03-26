@@ -19,7 +19,7 @@ export function openGraph({
   description,
   banner,
   // !STARTERCONF Or, you can use my server with your own logo.
-  logo = 'https://og.thcl.dev/images/logo.jpg',
+  logo = 'https://adhamtarek.me/images/logo.png',
   isBlog = false,
 }: OpenGraphType): string {
   const ogLogo = encodeURIComponent(logo);
