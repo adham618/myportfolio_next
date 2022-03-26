@@ -12,8 +12,8 @@ module.exports = {
         'primary-focus': '#140d16',
         'primary-content': '#B3C5EF',
         dark: '#16121A',
-        content: '#334155',
-        'content-dark': '#94a3b8',
+        content: '#ACACAC',
+        'content-dark': '#807D82',
         bgcontent: '#1A161F',
       },
     },
@@ -28,5 +28,9 @@ module.exports = {
     prefix: '',
     //darkTheme: 'dark',
   },
-  plugins: [require('@tailwindcss/forms'), require('daisyui')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('daisyui'),
+    require('@tailwindcss/typography'),
+  ],
 };
