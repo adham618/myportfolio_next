@@ -10,13 +10,16 @@ type OpenGraphType = {
   banner?: string;
   isBlog?: boolean;
 };
-
+// !STARTERCONF This OG is generated from https://github.com/theodorusclarence/og
+// Please clone them and self-host if your site is going to be visited by many people.
+// Then change the url and the default logo.
 export function openGraph({
   siteName,
   templateTitle,
   description,
   banner,
-  logo = 'https://adhamtarek.me/images/logo.png',
+  // !STARTERCONF Or, you can use my server with your own logo.
+  logo = 'https://og.adhamtarek.me/images/logo.jpg',
   isBlog = false,
 }: OpenGraphType): string {
   const ogLogo = encodeURIComponent(logo);
@@ -29,10 +32,10 @@ export function openGraph({
   if (isBlog) {
     const ogBanner = banner ? encodeURIComponent(banner.trim()) : undefined;
 
-    return `https://adhamtarek.me/api/blog?templateTitle=${ogTemplateTitle}&banner=${ogBanner}`;
+    return `https://og.adhamtarek.me/api/blog?templateTitle=${ogTemplateTitle}&banner=${ogBanner}`;
   }
 
-  return `https://adhamtarek.me/api/gradient?siteName=${ogSiteName}&description=${ogDesc}&logo=${ogLogo}${
+  return `https://og.adhamtarek.me/api/gradient?siteName=${ogSiteName}&description=${ogDesc}&logo=${ogLogo}${
     ogTemplateTitle ? `&templateTitle=${ogTemplateTitle}` : ''
   }`;
 }
