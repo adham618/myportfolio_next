@@ -28,9 +28,5 @@ module.exports = {
     prefix: '',
     //darkTheme: 'dark',
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    '@tailwindcss/typography',
-    require('daisyui'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('daisyui')],
 };
