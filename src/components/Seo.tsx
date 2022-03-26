@@ -9,11 +9,9 @@ const defaultMeta = {
   siteName: 'ADHAM TAREK',
   description:
     'An online portfolio and blog by Adham Tarek. Showcase of my projects, and some of my thoughts about website development.',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://adham-tarek.com',
+  url: 'https://adhamtarek.me',
   type: 'website',
   robots: 'follow, index',
-  /** No need to be filled, will be populated with openGraph function */
   image: '',
 };
 
@@ -58,7 +56,7 @@ export default function Seo(props: SeoProps) {
       <meta property='og:title' content={meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
-      <meta name='twitter:card' content='summary_large_image' />
+      {/* <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@th_clarence' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
@@ -77,7 +75,7 @@ export default function Seo(props: SeoProps) {
             content='Theodorus Clarence'
           />
         </>
-      )}
+      )} */}
 
       {/* Favicons */}
       {favicons.map((linkProps) => (
