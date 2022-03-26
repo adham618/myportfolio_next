@@ -18,7 +18,7 @@ export default function AboutPage() {
       <main>
         <section className='dark:bg-dark'>
           <div className='layout min-h-screen py-16  text-content dark:text-content-dark'>
-            <h1 className='mb-5'>About me</h1>
+            <h1 className='mb-5'>About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque provident necessitatibus aliquam iusto id magni! Amet
