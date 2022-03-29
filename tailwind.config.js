@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
@@ -18,19 +17,6 @@ module.exports = {
       },
     },
   },
-  daisyui: {
-    styled: true,
-    themes: [],
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: '',
-    //darkTheme: 'dark',
-  },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('daisyui'),
-    require('@tailwindcss/typography'),
-  ],
+
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };

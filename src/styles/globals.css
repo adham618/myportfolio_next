@@ -9,6 +9,9 @@
     max-width: 68.75rem;
     @apply mx-auto w-11/12;
   }
+  ::selection {
+    background: hsla(46 94.3% 58.8% / 0.7);
+  }
   html::-webkit-scrollbar {
     width: 10px;
     //height: 10px;
