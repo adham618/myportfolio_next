@@ -11,6 +11,8 @@ import Seo from '@/components/Seo';
 //     };
 //   };
 // }
+// I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.
+// I'm a Freelancer Front-end Developer with over 12 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.
 export default function AboutPage() {
   return (
     <Layout>

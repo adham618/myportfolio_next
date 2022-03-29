@@ -12,8 +12,8 @@ import Logo from '@/components/SVG/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click The Mail Logo To Copy');
   return (
-    <footer className='footer footer-center bottom-0 mx-auto w-full border-t bg-primary py-10 text-content-dark dark:border-none'>
-      <div>
+    <footer className='bottom-0 mx-auto w-full bg-primary py-10 text-content-dark'>
+      <div className='layout flex flex-col items-center'>
         <div className='text-slate-300'>
           <Logo />
         </div>
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
       </div>
       <ScrollToTop
-        className='fixed right-10 bottom-10 z-50 h-10  w-10 rounded-md bg-primary-focus  shadow-sm'
+        className='fixed right-10 bottom-10 z-50 flex h-10 w-10 items-center justify-center rounded-md bg-primary-focus  shadow-sm'
         smooth
         component={<AiOutlineArrowUp className='h-6 w-6' />}
       />

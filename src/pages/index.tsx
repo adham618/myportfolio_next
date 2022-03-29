@@ -14,12 +14,10 @@ export default function HomePage() {
       <Seo />
       <main>
         <section className='bg-white dark:bg-dark'>
-          <div className='layout min-h-screen'>
-            <Intro />
-            <Services />
-            <Projects />
-            <Contact />
-          </div>
+          <Intro />
+          <Services />
+          <Projects />
+          <Contact />
         </section>
       </main>
     </Layout>

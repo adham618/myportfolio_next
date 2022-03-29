@@ -86,15 +86,19 @@ export default function Header() {
                     <Logo />
                   </div>
                 </div>
-                <ul className='menu mt-8 w-72 overflow-y-auto'>
+                <ul className='mt-8 flex w-72 flex-col overflow-y-auto'>
                   {links.map(({ href, label }) => (
-                    <li key={`${href}${label}`} onClick={() => setopen(!open)}>
+                    <li
+                      key={`${href}${label}`}
+                      className='relative flex flex-wrap items-stretch'
+                      onClick={() => setopen(!open)}
+                    >
                       <Link href={href}>
                         <a
                           className={clsx(
-                            '',
+                            'w-full py-4 px-5',
                             router.pathname === href &&
-                              'bg-primary text-primary-content dark:bg-primary-focus'
+                              'bg-primary text-slate-50 dark:bg-primary-focus'
                           )}
                         >
                           {label}
