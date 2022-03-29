@@ -2,8 +2,9 @@ import * as React from 'react';
 
 import clsxm from '@/lib/clsxm';
 
-type ButtonProps = {} & React.ComponentPropsWithoutRef<'div'>;
+// eslint-disable-next-line @typescript-eslint/ban-types
+type indexProps = {} & React.ComponentPropsWithoutRef<'div'>;
 
-export default function Button({ className, ...rest }: ButtonProps) {
+export default function index({ className, ...rest }: indexProps) {
   return <div className={clsxm('', className)} {...rest}></div>;
 }
