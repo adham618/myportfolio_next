@@ -30,6 +30,11 @@
   html::-webkit-scrollbar-thumb:hover {
     background: #140d16;
   }
+}
+@layer components {
+  .Btn {
+    @apply hidden h-6 cursor-pointer transition-all duration-150 ease-out hover:scale-125 md:inline-flex;
+  }
   .text-stroke {
     -webkit-text-stroke: 2px hsla(0 0% 0% / 1);
   }
