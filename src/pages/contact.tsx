@@ -6,12 +6,12 @@ import Seo from '@/components/Seo';
 export default function ContactUSPage() {
   return (
     <Layout>
-      <Seo templateTitle='Contact US' />
+      <Seo templateTitle='Contact Me' />
 
       <main>
         <section className='dark:bg-dark'>
           <div className='layout dark:text-contentdark min-h-screen py-20 text-content'>
-            Contact-US
+            Contact Me
           </div>
         </section>
       </main>
