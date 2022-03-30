@@ -13,7 +13,7 @@ const links = [
   { href: '/about', label: 'About' },
   { href: '#services', label: 'Services' },
   { href: '/projects', label: 'Projects' },
-  { href: '/contact-us', label: 'Contact' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
