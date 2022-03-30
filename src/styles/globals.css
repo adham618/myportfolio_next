@@ -39,6 +39,6 @@
     -webkit-text-stroke: 2px hsla(0 0% 0% / 1);
   }
   .text-stroke-black {
-    -webkit-text-stroke: 2px hsla(0 0% 0% / 1);
+    -webkit-text-stroke: 2px hsla(0 0% 100% / 1);
   }
 }
