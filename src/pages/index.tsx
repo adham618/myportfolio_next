@@ -13,7 +13,7 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main>
-        <section className='bg-white dark:bg-dark'>
+        <section className=' dark:bg-dark'>
           <Intro />
           <Services />
           <Projects />
