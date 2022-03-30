@@ -12,12 +12,12 @@ import Logo from '@/components/SVG/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click The Mail Logo To Copy');
   return (
-    <footer className='bottom-0 mx-auto w-full bg-primary py-10 text-content-dark'>
+    <footer className='bottom-0 mx-auto w-full bg-primary py-14 leading-loose text-content-dark'>
       <div className='layout flex flex-col items-center'>
         <div className='text-slate-300'>
           <Logo />
         </div>
-        <p className='font-bold text-slate-300'>
+        <p className='font-bold text-content-dark'>
           Providing reliable service since 2020
         </p>
         <p>Copyright © {new Date().getFullYear()} - All rights reserved. </p>
