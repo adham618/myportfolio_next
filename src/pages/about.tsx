@@ -20,8 +20,8 @@ export default function AboutPage() {
       <main>
         <section className='dark:bg-dark'>
           <div
-            className='layout prose  relative flex min-h-screen flex-col justify-center overflow-hidden
-      py-8 lg:py-16 '
+            className='layout prose  prose-gray relative flex min-h-screen flex-col justify-center overflow-hidden py-8
+       lg:py-16 '
           >
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
