@@ -54,13 +54,6 @@ export default function Seo(props: SeoProps) {
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
-      {/* Chrome, Firefox OS and Opera */}
-      <meta name='theme-color' content='#19141C' />
-      {/* Windows Phone */}
-      <meta name='msapplication-navbutton-color' content='#19141C' />
-      {/* iOS Safari  */}
-      <meta name='apple-mobile-web-app-capable' content='yes' />
-      <meta name='apple-mobile-web-app-status-bar-style' content='#19141C' />
       {/* Twitter */}
       {/* <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@th_clarence' />
