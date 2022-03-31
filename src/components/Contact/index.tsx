@@ -1,14 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
-import { InlineWidget } from 'react-calendly';
-import { IoClose } from 'react-icons/io5';
+import { PopupButton } from 'react-calendly';
 
-import Button from '../Button';
+import ButtonDiv from '../Button/ButtonDiv';
 import ButtonLink from '../Button/ButtonLink';
 import StrokeTitle from '../StrokeTitle';
 
 export default function Contact() {
-  const [open, setopen] = React.useState(false);
   return (
     <section className=' bg-slate-100 dark:bg-primary'>
       <div className='layout  flex h-[30rem] w-full flex-col items-center justify-center py-80 text-center'>
@@ -45,39 +43,32 @@ export default function Contact() {
           />{' '}
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
-            <Button
-              onClick={() => setopen(!open)}
-              content={
-                <>
-                  <img
-                    width='24'
-                    height='24'
-                    className='h-6 w-6'
-                    src='/svg/zoom.svg'
-                    alt='zoom'
+            <PopupButton
+              url='https://calendly.com/adham-tarek'
+              // className='rounded-md border border-black bg-transparent px-5 py-4 transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black'
+              rootElement={document.getElementById('__next') as never}
+              text={
+                (
+                  <ButtonDiv
+                    content={
+                      <>
+                        <img
+                          width='24'
+                          height='24'
+                          className='h-6 w-6'
+                          src='/svg/zoom.svg'
+                          alt='zoom'
+                        />
+                        Schedule Zoom meeting
+                      </>
+                    }
+                    className='top-0 flex items-center justify-center gap-3 text-center'
                   />
-                  Schedule Zoom meeting
-                </>
+                ) as never
               }
-              className='top-0 flex items-center justify-center gap-3 text-center'
             />
           </div>
         </div>
-        {open && (
-          <>
-            <div
-              onClick={() => setopen(!open)}
-              className='absolute top-0 left-0 z-[99999] h-screen w-full cursor-pointer bg-dark opacity-30'
-            ></div>
-            <div className='absolute left-3 top-[20%] z-[99999] ml-4 h-screen w-10/12 bg-transparent p-0 text-black sm:top-16 sm:left-[7%] md:top-0'>
-              <IoClose
-                onClick={() => setopen(!open)}
-                className='absolute top-0 right-0 inline-block  h-7 w-7  cursor-pointer'
-              />
-              <InlineWidget url='https://calendly.com/adham-tarek' />
-            </div>
-          </>
-        )}
       </div>
     </section>
   );
