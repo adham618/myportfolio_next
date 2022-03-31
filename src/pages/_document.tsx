@@ -15,18 +15,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head>
-          {/* Chrome, Firefox OS and Opera */}
-          <meta name='theme-color' content='#19141C' />
-          {/* Windows Phone */}
-          <meta name='msapplication-navbutton-color' content='#19141C' />
-          {/* iOS Safari  */}
-          <meta name='apple-mobile-web-app-capable' content='yes' />
-          <meta
-            name='apple-mobile-web-app-status-bar-style'
-            content='#19141C'
-          />
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
