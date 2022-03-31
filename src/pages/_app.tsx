@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 import '@/styles/nprogress.css';
 import '@/styles/globals.css';
 
+import ClientOnlyPortal from '@/lib/ClientOnlyPortal';
+
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const delay = 500; // in milliseconds
@@ -27,7 +29,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <ThemeProvider attribute='class' defaultTheme='system'>
-      <Component {...pageProps} />
+      <ClientOnlyPortal selector='#__next'>
+        <Component {...pageProps} />
+      </ClientOnlyPortal>
     </ThemeProvider>
   );
 }
