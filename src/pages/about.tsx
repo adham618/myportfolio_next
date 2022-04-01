@@ -19,10 +19,8 @@ export default function AboutPage() {
       <Seo templateTitle='About' />
       <main>
         <section className='dark:bg-dark'>
-          <div
-            className='layout prose  prose-gray relative flex min-h-screen flex-col justify-center overflow-hidden py-8
-       lg:py-16 '
-          >
+          <div className='layout prose relative flex min-h-screen flex-col justify-center overflow-hidden py-8 opacity-50  lg:py-16 '>
+            <h2>Lorem ipsum dolor</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio, recusandae nesciunt ullam aut et ratione dicta ab

@@ -10,9 +10,7 @@ export default function ContactUSPage() {
 
       <main>
         <section className='dark:bg-dark'>
-          <div className='layout dark:text-contentdark min-h-screen py-20 text-content'>
-            Contact Me
-          </div>
+          <div className='layout min-h-screen py-20 opacity-50'>Contact Me</div>
         </section>
       </main>
     </Layout>

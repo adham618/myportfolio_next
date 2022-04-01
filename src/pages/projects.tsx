@@ -9,10 +9,8 @@ export default function ProjectsPage() {
       <Seo templateTitle='Projects' />
 
       <main>
-        <section className='dark:bg-slate-900'>
-          <div className='dark:text-contentdark layout min-h-screen py-20 text-content'>
-            Projects
-          </div>
+        <section className='dark:bg-dark'>
+          <div className='layout min-h-screen py-20 opacity-50'>Projects</div>
         </section>
       </main>
     </Layout>

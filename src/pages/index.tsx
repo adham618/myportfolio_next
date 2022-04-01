@@ -12,13 +12,11 @@ export default function HomePage() {
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-      <main>
-        <section className='dark:bg-dark'>
-          <Intro />
-          <Services />
-          <Projects />
-          <Contact />
-        </section>
+      <main className='dark:bg-dark'>
+        <Intro />
+        <Services />
+        <Projects />
+        <Contact />
       </main>
     </Layout>
   );
