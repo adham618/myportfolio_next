@@ -12,28 +12,28 @@ const cardData = [
     icon: <RiRulerLine />,
     title: 'Design',
     content: 'Product design, UI/UX design, Design systems',
-    titleColor: 'rose-500',
+    titleColor: '#F43F5E',
   },
   {
     id: 2,
     icon: <BiCode />,
     title: 'Development',
     content: 'Developing scalable web apps and mobile apps',
-    titleColor: 'yellow-500',
+    titleColor: '#EAB308',
   },
   {
     id: 3,
     icon: <FaAws />,
     title: 'Deployment',
     content: 'Automated deployment workflow and CI/CD pipelines',
-    titleColor: 'blue-600',
+    titleColor: '#3B82F6',
   },
   {
     id: 4,
     icon: <AiOutlineTool />,
     title: 'Maintainance',
     content: 'Continuous monitoring, maintenance and support',
-    titleColor: 'green-500',
+    titleColor: '#22C55E',
   },
 ];
 export default function Services() {
@@ -50,13 +50,13 @@ export default function Services() {
         </p>
       </div>
       <div className='grid grid-cols-1 justify-center gap-9 py-14 sm:px-14 lg:grid-cols-2'>
-        {cardData.map(({ id, icon, title, content, titleColor }) => (
+        {cardData.map((card) => (
           <Card
-            key={id}
-            icon={icon as never}
-            title={title}
-            content={content}
-            titleColor={titleColor}
+            key={card.id}
+            icon={card.icon as never}
+            title={card.title}
+            content={card.content}
+            titleColor={card.titleColor}
           />
         ))}
       </div>
