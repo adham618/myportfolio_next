@@ -1,21 +1,72 @@
 import * as React from 'react';
 
+import Project from './Project';
+import ButtonLink from '../Button/ButtonLink';
 import StrokeTitle from '../StrokeTitle';
-
+const projectsData = [
+  {
+    id: 1,
+    image: '/images/test.png',
+    title: 'CryptoMeme.WTF',
+    siteLink: 'blue-600',
+    GithubLink: 'blue-600',
+    content: 'Memes based on current price Updates every hour',
+  },
+  {
+    id: 2,
+    image: '/images/test.png',
+    title: 'CryptoMeme.WTF',
+    siteLink: 'blue-600',
+    GithubLink: 'blue-600',
+    content: 'Memes based on current price Updates every hour',
+  },
+  {
+    id: 3,
+    image: '/images/test.png',
+    title: 'CryptoMeme.WTF',
+    siteLink: 'blue-600',
+    GithubLink: 'blue-600',
+    content: 'Memes based on current price Updates every hour',
+  },
+  {
+    id: 4,
+    image: '/images/test.png',
+    title: 'CryptoMeme.WTF',
+    siteLink: 'blue-600',
+    GithubLink: 'blue-600',
+    content: 'Memes based on current price Updates every hour',
+  },
+];
 export default function Projects() {
   return (
-    <section className=''>
-      <div className='layout'>
-        <div className='max-w-3xl'>
-          <StrokeTitle title={<>What I&apos;am offering</>} />
-          <p
-            className='mb-5 ml-5  max-w-sm border-l-2 border-slate-500 py-2
+    <section className='layout py-20'>
+      <div className='max-w-3xl'>
+        <StrokeTitle title={<>Portfolio</>} />
+        <p
+          className='mb-5 ml-5  max-w-sm border-l-2 border-slate-500 py-2
         pl-5 opacity-50'
-          >
-            I help you start your business with a modern, user-friendly, and
-            intuitive web application.
-          </p>
-        </div>
+        >
+          Checkout some of my successful projects.
+        </p>
+      </div>
+      <div className='flex flex-col justify-center pt-20 pb-2'>
+        {projectsData.map((project) => (
+          <Project
+            key={project.id}
+            image={project.image}
+            title={project.title}
+            siteLink={project.siteLink}
+            GithubLink={project.GithubLink}
+            content={project.content}
+          />
+        ))}
+      </div>
+      <div className='flex justify-center'>
+        <ButtonLink
+          content='See More Projects'
+          className='flex-none'
+          href='/projects'
+        />
       </div>
     </section>
   );
