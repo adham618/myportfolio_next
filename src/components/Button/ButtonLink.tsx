@@ -5,6 +5,7 @@ import clsxm from '@/lib/clsxm';
 
 type indexProps = {
   content: React.ReactNode;
+  className?: string;
 } & React.ComponentPropsWithoutRef<'a'>;
 
 export default function ButtonLink({
