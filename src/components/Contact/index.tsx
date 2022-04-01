@@ -9,7 +9,7 @@ import StrokeTitle from '../StrokeTitle';
 export default function Contact() {
   return (
     <section className='bg-slate-100 dark:bg-primary' id='contact'>
-      <div className='layout  flex h-[30rem] w-full flex-col items-center justify-center px-1 py-80 pt-64 text-center sm:pt-80'>
+      <div className='layout flex h-[30rem] w-full flex-col items-center justify-center px-1 py-80 pt-64 text-center sm:pt-80'>
         <div className='flex flex-col items-center justify-center text-center'>
           <StrokeTitle
             title={

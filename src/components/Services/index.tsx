@@ -8,28 +8,28 @@ import Card from './Card';
 import StrokeTitle from '../StrokeTitle';
 const cardData = [
   {
-    id: 0,
+    id: 1,
     icon: <RiRulerLine />,
     title: 'Design',
     content: 'Product design, UI/UX design, Design systems',
     titleColor: 'rose-500',
   },
   {
-    id: 1,
+    id: 2,
     icon: <BiCode />,
     title: 'Development',
     content: 'Developing scalable web apps and mobile apps',
     titleColor: 'yellow-500',
   },
   {
-    id: 2,
+    id: 3,
     icon: <FaAws />,
     title: 'Deployment',
     content: 'Automated deployment workflow and CI/CD pipelines',
     titleColor: 'blue-600',
   },
   {
-    id: 3,
+    id: 4,
     icon: <AiOutlineTool />,
     title: 'Maintainance',
     content: 'Continuous monitoring, maintenance and support',
@@ -38,7 +38,7 @@ const cardData = [
 ];
 export default function Services() {
   return (
-    <section className='layout py-20'>
+    <section className='layout py-20 text-yellow-500'>
       <div className='max-w-3xl'>
         <StrokeTitle title={<>What I&apos;am offering</>} />
         <p
