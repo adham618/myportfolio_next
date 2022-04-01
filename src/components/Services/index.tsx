@@ -38,7 +38,7 @@ const cardData = [
 ];
 export default function Services() {
   return (
-    <section className='layout py-20 text-yellow-500'>
+    <section className='layout py-20'>
       <div className='max-w-3xl'>
         <StrokeTitle title={<>What I&apos;am offering</>} />
         <p
