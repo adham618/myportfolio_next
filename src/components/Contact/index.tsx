@@ -8,8 +8,8 @@ import StrokeTitle from '../StrokeTitle';
 
 export default function Contact() {
   return (
-    <section className=' bg-slate-100 dark:bg-primary'>
-      <div className='layout  flex h-[30rem] w-full flex-col items-center justify-center py-80 text-center'>
+    <section className='bg-slate-100 dark:bg-primary' id='contact'>
+      <div className='layout  flex h-[30rem] w-full flex-col items-center justify-center px-1 py-80 text-center'>
         <div className='flex flex-col items-center justify-center text-center'>
           <StrokeTitle
             title={
@@ -45,7 +45,6 @@ export default function Contact() {
           <div className='inline-block'>
             <PopupButton
               url='https://calendly.com/adham-tarek'
-              // className='rounded-md border border-black bg-transparent px-5 py-4 transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black'
               rootElement={document.getElementById('__next') as never}
               text={
                 (
