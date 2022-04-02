@@ -28,9 +28,11 @@ export default function Project({
         </a>
         <div className='flex flex-col justify-center'>
           <div className='mb-5 flex items-center gap-2'>
-            <h2 className='font-title text-2xl font-black tracking-wider lg:text-3xl'>
-              {title}
-            </h2>
+            <a href={siteLink} target='_blank' rel='noreferrer'>
+              <h2 className='font-title text-2xl font-black tracking-wider lg:text-3xl'>
+                {title}
+              </h2>
+            </a>
             <Tooltip
               html={
                 <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
