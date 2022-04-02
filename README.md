@@ -1,1 +1,35 @@
-# myportfolio_next
+# Portfolio
+
+A personal web developer portfolio built with NextJS & Tailwind CSS.
+
+## Preview
+
+![screenshot](https://user-images.githubusercontent.com/88515844/161386425-4b88640f-3999-4695-9347-f12d09560f4c.png)
+![screenshot2](https://user-images.githubusercontent.com/88515844/161386427-47cd1351-3761-457c-9068-780b4e9b40a0.png)
+![screenshot3](https://user-images.githubusercontent.com/88515844/161386436-d6bd09cb-314a-485c-91b6-331720118379.png)
+
+## **[Live Demo](https://adhamtarek.vercel.app/)**
+
+## Technologies
+
+- **ReactJs**: JavaScript Library
+
+- **NextJs**: ReactJs Framework
+
+- **Tailwind-CSS**: CSS Framework
+
+- **Sanity-CMS**: Headless CMS
+
+- **React-Hook-Form**: Validate Forms In React
+
+- **Prettier**: Code formatter
+
+- **Eslint**: Linter
+
+
+## Setup
+
+1. Clone or download the project.
+2. `Cd` in the project directory.
+3. Run `git remote rm origin` to remove the remote refenrece.
+4. Run `yarn` to install dependencies
