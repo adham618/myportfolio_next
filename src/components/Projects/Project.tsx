@@ -21,14 +21,19 @@ export default function Project({
   return (
     <div className='mb-20 w-auto'>
       <div className='flex flex-col gap-16 md:flex-row'>
-        <a href={siteLink} target='_blank' rel='noreferrer'>
+        <a href={siteLink} aria-label={title} target='_blank' rel='noreferrer'>
           <figure className='transform cursor-pointer overflow-hidden rounded-lg shadow-2xl transition duration-500 hover:scale-95'>
             <NextImage src={image} width={600} height={300} alt={title} />
           </figure>
         </a>
         <div className='flex flex-col justify-center'>
           <div className='mb-5 flex items-center gap-2'>
-            <a href={siteLink} target='_blank' rel='noreferrer'>
+            <a
+              href={siteLink}
+              aria-label={title}
+              target='_blank'
+              rel='noreferrer'
+            >
               <h2 className='font-title text-2xl font-black tracking-wider lg:text-3xl'>
                 {title}
               </h2>
@@ -46,6 +51,7 @@ export default function Project({
             >
               <a
                 href={siteLink}
+                aria-label={title}
                 className='inline-block p-1 hover:rounded-full hover:bg-slate-200  focus:outline-none dark:text-white dark:hover:bg-opacity-50'
                 target='_blank'
                 rel='noreferrer'
@@ -66,6 +72,7 @@ export default function Project({
             >
               <a
                 href={GithubLink}
+                aria-label={title}
                 className='inline-block p-1 hover:rounded-full hover:bg-slate-200  focus:outline-none dark:text-white dark:hover:bg-opacity-50'
                 target='_blank'
                 rel='noreferrer'
