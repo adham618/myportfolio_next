@@ -7,10 +7,10 @@ import Header from './Header';
 export default function Layout({ children }: { children: React.ReactNode }) {
   sayHello();
   return (
-    <div>
+    <>
       <Header />
       {children}
       <Footer />
-    </div>
+    </>
   );
 }

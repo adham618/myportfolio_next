@@ -5,7 +5,7 @@ import * as React from 'react';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 
-import Logo from '../SVG/Logo';
+import Logo from '../Logo';
 import ThemeToggle from '../ThemeToggle';
 
 const links = [
@@ -44,7 +44,7 @@ export default function Header() {
           className='cursor-pointer text-primary'
           onClick={() => router.push('/')}
         >
-          <Logo />
+          <Logo width='135' height='35' className='dark:text-gray-200' />
         </div>
         <div className='flex items-center justify-between '>
           <nav className='mr-5 hidden flex-none md:block'>
@@ -54,9 +54,9 @@ export default function Header() {
                   <Link href={href}>
                     <a
                       className={clsx(
-                        ' hover:text-primary-focus dark:text-content-dark dark:hover:text-primary-content',
+                        'hover:text-primary-focus dark:text-gray-200 dark:hover:text-primary-content',
                         router.pathname === href &&
-                          'font-bold text-primary-focus dark:font-bold dark:text-primary-content'
+                          'font-bold text-primary dark:font-bold dark:text-primary-content'
                       )}
                     >
                       {label}
@@ -82,7 +82,11 @@ export default function Header() {
                     className='cursor-pointer'
                     onClick={() => router.push('/')}
                   >
-                    <Logo />
+                    <Logo
+                      width='135'
+                      height='35'
+                      className='dark:text-gray-200'
+                    />
                   </div>
                 </div>
                 <ul className='mt-8 flex w-72 flex-col overflow-y-auto'>

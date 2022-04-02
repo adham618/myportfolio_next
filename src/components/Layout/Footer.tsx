@@ -8,15 +8,13 @@ import { MdOutlineMail } from 'react-icons/md';
 import ScrollToTop from 'react-scroll-to-top';
 import { Tooltip } from 'react-tippy';
 
-import Logo from '@/components/SVG/Logo';
+import Logo from '@/components/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click The Mail Logo To Copy');
   return (
-    <footer className='bottom-0 mx-auto w-full bg-primary py-14 leading-loose text-content-dark'>
+    <footer className='bottom-0 mx-auto w-full  bg-primary py-14 leading-loose text-content-dark'>
       <div className='layout flex flex-col items-center'>
-        <div className='text-slate-300'>
-          <Logo />
-        </div>
+        <Logo className='mb-5 text-slate-100' width='200' />
         <p className='font-bold text-content-dark'>
           Providing reliable service since 2020
         </p>
@@ -48,7 +46,7 @@ export default function Footer() {
                 );
               }}
             >
-              <MdOutlineMail className='mt-[-3px] h-8 w-7 cursor-pointer' />
+              <MdOutlineMail className='mt-[-3px] h-8 w-7 cursor-pointer text-slate-200' />
             </CopyToClipboard>
           </Tooltip>
           <Tooltip
@@ -68,7 +66,7 @@ export default function Footer() {
               rel='noreferrer'
               aria-label='linkedin'
             >
-              <BsGithub className='h-6 w-6 cursor-pointer' />
+              <BsGithub className='h-6 w-6 cursor-pointer text-slate-200' />
             </a>
           </Tooltip>
           <Tooltip
@@ -88,7 +86,7 @@ export default function Footer() {
               rel='noreferrer'
               aria-label='linkedin'
             >
-              <FaLinkedin className='h-6 w-6 cursor-pointer' />
+              <FaLinkedin className='h-6 w-6 cursor-pointer text-slate-200' />
             </a>
           </Tooltip>
         </div>
