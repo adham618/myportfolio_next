@@ -1,6 +1,6 @@
 # Portfolio
 
-A personal web developer portfolio built with NextJS & Tailwind CSS.
+A personal portfolio website that showcases my feature projects, technical skill stack, contact information and more about me.
 
 ## Preview
 
@@ -25,7 +25,6 @@ A personal web developer portfolio built with NextJS & Tailwind CSS.
 - **Prettier**: Code formatter
 
 - **Eslint**: Linter
-
 
 ## Setup
 
