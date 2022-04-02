@@ -54,9 +54,9 @@ export default function Header() {
                   <Link href={href}>
                     <a
                       className={clsx(
-                        'hover:text-primary-focus dark:text-gray-200 dark:hover:text-primary-content',
+                        'hover:text-primary-focus dark:text-slate-200',
                         router.pathname === href &&
-                          'font-bold text-primary dark:font-bold dark:text-primary-content'
+                          'font-bold text-primary dark:font-bold'
                       )}
                     >
                       {label}
@@ -72,7 +72,7 @@ export default function Header() {
                 onClick={() => setopen(!open)}
                 className='absolute top-0 left-0 h-screen w-full cursor-pointer bg-dark opacity-30 md:hidden'
               ></div>
-              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-primary dark:text-primary-content md:hidden'>
+              <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-primary md:hidden'>
                 <div className='m-4'>
                   <IoClose
                     onClick={() => setopen(!open)}
@@ -99,7 +99,7 @@ export default function Header() {
                       <Link href={href}>
                         <a
                           className={clsx(
-                            'w-full py-4 px-5 hover:text-primary-focus dark:text-gray-200 dark:hover:text-primary-content',
+                            'w-full py-4 px-5  dark:text-slate-200',
                             router.pathname === href &&
                               'bg-primary text-slate-50 dark:bg-primary-focus'
                           )}
