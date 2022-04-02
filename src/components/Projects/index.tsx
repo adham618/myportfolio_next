@@ -64,7 +64,7 @@ export default function Projects() {
       <div className='flex justify-center'>
         <ButtonLink
           content='See More Projects'
-          className='flex-none'
+          className='flex-none text-center'
           href='/projects'
         />
       </div>

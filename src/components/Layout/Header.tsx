@@ -99,7 +99,7 @@ export default function Header() {
                       <Link href={href}>
                         <a
                           className={clsx(
-                            'w-full py-4 px-5',
+                            'w-full py-4 px-5 hover:text-primary-focus dark:text-gray-200 dark:hover:text-primary-content',
                             router.pathname === href &&
                               'bg-primary text-slate-50 dark:bg-primary-focus'
                           )}

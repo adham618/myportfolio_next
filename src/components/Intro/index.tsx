@@ -31,7 +31,7 @@ export default function Intro() {
           </p>
         </div>
         <ButtonLink
-          className='border-none bg-rose-500 text-white hover:bg-rose-600 dark:hover:bg-rose-600 dark:hover:text-white sm:px-12'
+          className='flex items-center justify-center border-none bg-rose-500 text-center text-white hover:bg-rose-600 dark:hover:bg-rose-600 dark:hover:text-white sm:px-12'
           href='#contact'
           content="Let's Get Started!"
         />
