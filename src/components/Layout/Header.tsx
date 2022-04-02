@@ -76,7 +76,7 @@ export default function Header() {
                 <div className='m-4'>
                   <IoClose
                     onClick={() => setopen(!open)}
-                    className='absolute right-3 inline-block h-9 w-9  cursor-pointer stroke-current   p-1 hover:rounded-md hover:bg-slate-200 focus:outline-none dark:text-slate-400 dark:hover:bg-opacity-40'
+                    className='absolute right-3 inline-block h-9 w-9  cursor-pointer stroke-current   p-1 hover:rounded-md hover:bg-slate-200 focus:outline-none dark:text-slate-200 dark:hover:bg-opacity-40'
                   />
                   <div
                     className='cursor-pointer'
@@ -118,12 +118,12 @@ export default function Header() {
           <button
             aria-label='nav toggle'
             onClick={() => setopen(!open)}
-            className='ml-3 cursor-pointer p-1.5 hover:rounded-md hover:bg-slate-200 focus:outline-none dark:text-slate-400  dark:hover:bg-opacity-40 md:hidden  '
+            className='ml-3 cursor-pointer p-1.5 hover:rounded-md hover:bg-slate-200 focus:outline-none dark:text-slate-200  dark:hover:bg-opacity-40 md:hidden  '
           >
             {open ? (
-              <IoClose className='inline-block h-7 w-7 stroke-current dark:text-slate-400' />
+              <IoClose className='inline-block h-7 w-7 stroke-current dark:text-slate-200' />
             ) : (
-              <HiOutlineMenu className='inline-block h-7 w-7 stroke-current checked:hidden dark:text-slate-400' />
+              <HiOutlineMenu className='inline-block h-7 w-7 stroke-current checked:hidden dark:text-slate-200' />
             )}
           </button>
         </div>
