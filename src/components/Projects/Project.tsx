@@ -21,13 +21,26 @@ export default function Project({
   return (
     <div className='mb-20 w-auto'>
       <div className='flex flex-col gap-16 md:flex-row'>
-        <a href={siteLink} aria-label={title} target='_blank' rel='noreferrer'>
-          <figure className='transform cursor-pointer overflow-hidden rounded-lg shadow-2xl transition duration-500 hover:scale-95'>
-            <NextImage src={image} width={600} height={300} alt={title} />
-          </figure>
-        </a>
-        <div className='flex flex-col justify-center'>
-          <div className='mb-5 flex items-center gap-2'>
+        <div className='md:w-3/4 '>
+          <a
+            href={siteLink}
+            aria-label={title}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <figure className='transform cursor-pointer overflow-hidden rounded-xl shadow-xl transition duration-500 hover:scale-95'>
+              <NextImage
+                src={image}
+                layout='responsive'
+                width={600}
+                height={300}
+                alt={title}
+              />
+            </figure>
+          </a>
+        </div>
+        <div className='flex flex-col justify-center md:w-1/2'>
+          <div className='mb-5 flex items-center gap-2 md:justify-between'>
             <a
               href={siteLink}
               aria-label={title}
@@ -38,48 +51,51 @@ export default function Project({
                 {title}
               </h2>
             </a>
-            <Tooltip
-              html={
-                <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
-                  Link to site
-                </div>
-              }
-              hideOnClick={false}
-              position='top'
-              trigger='mouseenter'
-              interactive
-            >
-              <a
-                href={siteLink}
-                aria-label={title}
-                className='inline-block p-1 hover:rounded-full hover:bg-slate-200  focus:outline-none dark:text-white dark:hover:bg-opacity-50'
-                target='_blank'
-                rel='noreferrer'
+            <div>
+              {' '}
+              <Tooltip
+                html={
+                  <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
+                    Link to site
+                  </div>
+                }
+                hideOnClick={false}
+                position='top'
+                trigger='mouseenter'
+                interactive
               >
-                <BsLink45Deg size={22} />
-              </a>
-            </Tooltip>
-            <Tooltip
-              html={
-                <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
-                  Github
-                </div>
-              }
-              hideOnClick={false}
-              position='top'
-              trigger='mouseenter'
-              interactive
-            >
-              <a
-                href={GithubLink}
-                aria-label={title}
-                className='inline-block p-1 hover:rounded-full hover:bg-slate-200  focus:outline-none dark:text-white dark:hover:bg-opacity-50'
-                target='_blank'
-                rel='noreferrer'
+                <a
+                  href={siteLink}
+                  aria-label={title}
+                  className='inline-block p-1 hover:rounded-full hover:bg-slate-200  focus:outline-none dark:text-white dark:hover:bg-opacity-50'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <BsLink45Deg size={22} />
+                </a>
+              </Tooltip>
+              <Tooltip
+                html={
+                  <div className='mb-2 inline-block rounded-sm border  border-gray-600 bg-dark p-2 text-xs text-gray-200 shadow-md '>
+                    Github
+                  </div>
+                }
+                hideOnClick={false}
+                position='top'
+                trigger='mouseenter'
+                interactive
               >
-                <AiFillGithub size={22} />
-              </a>
-            </Tooltip>
+                <a
+                  href={GithubLink}
+                  aria-label={title}
+                  className='inline-block p-1 hover:rounded-full hover:bg-slate-200  focus:outline-none dark:text-white dark:hover:bg-opacity-50'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <AiFillGithub size={22} />
+                </a>
+              </Tooltip>
+            </div>
           </div>
           <p className='w-2/3 opacity-50 '>{content}</p>
         </div>

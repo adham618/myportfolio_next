@@ -1,42 +1,10 @@
 import * as React from 'react';
 
+import projectsData from '@/data/projectsData';
+
 import Project from './Project';
 import ButtonLink from '../Button/ButtonLink';
 import StrokeTitle from '../StrokeTitle';
-const projectsData = [
-  {
-    id: 1,
-    image: '/images/test.png',
-    title: 'CryptoMeme.WTF',
-    siteLink: 'blue-600',
-    GithubLink: 'blue-600',
-    content: 'Memes based on current price Updates every hour',
-  },
-  {
-    id: 2,
-    image: '/images/test.png',
-    title: 'CryptoMeme.WTF',
-    siteLink: 'blue-600',
-    GithubLink: 'blue-600',
-    content: 'Memes based on current price Updates every hour',
-  },
-  {
-    id: 3,
-    image: '/images/test.png',
-    title: 'CryptoMeme.WTF',
-    siteLink: 'blue-600',
-    GithubLink: 'blue-600',
-    content: 'Memes based on current price Updates every hour',
-  },
-  {
-    id: 4,
-    image: '/images/test.png',
-    title: 'CryptoMeme.WTF',
-    siteLink: 'blue-600',
-    GithubLink: 'blue-600',
-    content: 'Memes based on current price Updates every hour',
-  },
-];
 export default function Projects() {
   return (
     <section className='layout py-20'>
@@ -50,7 +18,7 @@ export default function Projects() {
         </p>
       </div>
       <div className='flex flex-col justify-center pt-20 pb-2'>
-        {projectsData.map((project) => (
+        {projectsData.slice(0, 4).map((project) => (
           <Project
             key={project.id}
             image={project.image}
