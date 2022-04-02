@@ -12,28 +12,28 @@ const cardData = [
     icon: <RiRulerLine />,
     title: 'Design',
     content: 'Product design, UI/UX design, Design systems',
-    titleColor: '#F43F5E',
+    titleColor: '#D01030',
   },
   {
     id: 2,
     icon: <BiCode />,
     title: 'Development',
     content: 'Developing scalable web apps and mobile apps',
-    titleColor: '#EAB308',
+    titleColor: '#8C680D',
   },
   {
     id: 3,
     icon: <FaAws />,
     title: 'Deployment',
     content: 'Automated deployment workflow and CI/CD pipelines',
-    titleColor: '#3B82F6',
+    titleColor: '#0963F6',
   },
   {
     id: 4,
     icon: <AiOutlineTool />,
     title: 'Maintainance',
     content: 'Continuous monitoring, maintenance and support',
-    titleColor: '#22C55E',
+    titleColor: '#117E3C',
   },
 ];
 export default function Services() {
