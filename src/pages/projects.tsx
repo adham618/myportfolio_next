@@ -1,16 +1,40 @@
 import * as React from 'react';
 
+import projectsData from '@/data/projectsData';
+
 import Layout from '@/components/Layout';
+import Project from '@/components/Projects/Project';
 import Seo from '@/components/Seo';
+import StrokeTitle from '@/components/StrokeTitle';
 
 export default function ProjectsPage() {
   return (
     <Layout>
       <Seo templateTitle='Projects' />
 
-      <main>
-        <section className='dark:bg-dark'>
-          <div className='layout min-h-screen py-20 opacity-50'>Projects</div>
+      <main className='dark:bg-dark'>
+        <section className='layout py-20'>
+          <div className='max-w-3xl'>
+            <StrokeTitle title={<>Portfolio</>} />
+            <p
+              className='mb-5 ml-5  max-w-sm border-l-2 border-slate-500 py-2
+        pl-5 opacity-50'
+            >
+              Checkout some of my successful projects.
+            </p>
+          </div>
+          <div className='flex flex-col justify-center pt-20 pb-2'>
+            {projectsData.map((project) => (
+              <Project
+                key={project.id}
+                image={project.image}
+                title={project.title}
+                siteLink={project.siteLink}
+                GithubLink={project.GithubLink}
+                content={project.content}
+              />
+            ))}
+          </div>
         </section>
       </main>
     </Layout>
