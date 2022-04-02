@@ -23,7 +23,7 @@ export default function Project({
       <div className='flex flex-col gap-16 md:flex-row'>
         <a href={siteLink} target='_blank' rel='noreferrer'>
           <figure className='transform cursor-pointer overflow-hidden rounded-lg shadow-2xl transition duration-500 hover:scale-95'>
-            <NextImage src={image} width={600} height={300} />
+            <NextImage src={image} width={600} height={300} alt={title} />
           </figure>
         </a>
         <div className='flex flex-col justify-center'>
