@@ -8,14 +8,19 @@ export default function Intro() {
   return (
     <section className='layout gap-y-12 py-20'>
       <div className='flex flex-col items-center justify-center text-center'>
-        <div className='mb-11 max-w-3xl'>
+        <div className='mb-11 max-w-3xl sm:max-w-5xl'>
           <StrokeTitle
             title={
+              // <>
+              //   YOUR PARTNER{' '}
+              //   <span className='font-thin text-black dark:text-white'>—</span>{' '}
+              //   IN <span className='text-black dark:text-white'>DESIGN</span> &{' '}
+              //   <span className='text-black dark:text-white'>DEVELOPMENT</span>
+              // </>
               <>
-                YOUR PARTNER{' '}
-                <span className='font-thin text-black dark:text-white'>—</span>{' '}
-                IN <span className='text-black dark:text-white'>DESIGN</span> &{' '}
-                <span className='text-black dark:text-white'>DEVELOPMENT</span>
+                Hello I am{' '}
+                <span className='text-black dark:text-white'>Adham Tarek</span>{' '}
+                a Frontend Developer
               </>
             }
           />
@@ -31,7 +36,7 @@ export default function Intro() {
           </p>
         </div>
         <ButtonLink
-          className='flex items-center justify-center border-0 border-none bg-rose-500 px-12 text-center text-black hover:bg-rose-600 hover:text-black dark:text-black dark:hover:bg-rose-600'
+          className='flex items-center justify-center border-0 border-none bg-rose-500 px-12 text-center text-slate-50 hover:bg-rose-600 dark:hover:bg-rose-600'
           href='#contact'
           content="Let's Get Started!"
         />
