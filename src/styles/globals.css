@@ -31,8 +31,12 @@
     background: #140d16;
   }
   body {
-    display: flex;
-    flex-direction: column;
+    display: table;
+    width: 100%;
+  }
+
+  body > footer {
+    display: table-row;
   }
 }
 @layer components {
