@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <main className='dark:bg-dark'>
         <section className='layout py-20'>
           <div className='max-w-3xl'>
-            <StrokeTitle title={<>Portfolio</>} />
+            <StrokeTitle title='Projects' />
             <p
               className='mb-5 ml-5  max-w-sm border-l-2 border-slate-500 py-2
         pl-5 opacity-50'
