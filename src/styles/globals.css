@@ -31,12 +31,7 @@
     background: #140d16;
   }
   body {
-    display: table;
-    width: 100%;
-  }
-
-  body > footer {
-    display: table-row;
+    min-height: 100vh;
   }
 }
 @layer components {
