@@ -30,6 +30,10 @@
   html::-webkit-scrollbar-thumb:hover {
     background: #140d16;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @layer components {
   .Btn {
