@@ -12,7 +12,7 @@ import Logo from '@/components/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click The Mail Logo To Copy');
   return (
-    <footer className='bottom-0 mx-auto w-full  bg-primary py-14 leading-loose'>
+    <footer className=' mx-auto w-full  bg-primary py-14 leading-loose'>
       <div className='layout text- flex flex-col items-center text-slate-200'>
         <Logo className='mb-5' width='200' />
         <p className='font-bold '>Providing reliable service since 2020</p>
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
       </div>
       <ScrollToTop
-        className='fixed right-10 bottom-10 z-50 flex h-10 w-10 items-center justify-center rounded-md bg-primary-focus text-slate-200  shadow-sm'
+        className='fixed right-10 bottom-10 z-50 flex h-10 w-10 items-center justify-center rounded-md bg-primary-focus text-slate-200 shadow-sm dark:bg-slate-200  dark:text-slate-700'
         smooth
         aria-label='scroll to top'
         component={<AiOutlineArrowUp className='h-6 w-6' />}

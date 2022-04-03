@@ -9,29 +9,29 @@ import StrokeTitle from '../StrokeTitle';
 const cardData = [
   {
     id: 1,
-    icon: <RiRulerLine />,
     title: 'Design',
+    icon: <RiRulerLine />,
     content: 'Product design, UI/UX design, Design systems',
     titleColor: '#F43F5E',
   },
   {
     id: 2,
-    icon: <BiCode />,
     title: 'Development',
+    icon: <BiCode />,
     content: 'Developing scalable web apps and mobile apps',
     titleColor: '#EAB308',
   },
   {
     id: 3,
-    icon: <FaAws />,
     title: 'Deployment',
+    icon: <FaAws />,
     content: 'Automated deployment workflow and CI/CD pipelines',
     titleColor: '#3B82F6',
   },
   {
     id: 4,
-    icon: <AiOutlineTool />,
     title: 'Maintainance',
+    icon: <AiOutlineTool />,
     content: 'Continuous monitoring, maintenance and support',
     titleColor: '#22C55E',
   },

@@ -101,7 +101,7 @@ export default function Header() {
                           className={clsx(
                             'w-full py-4 px-5  dark:text-slate-200',
                             router.pathname === href &&
-                              'bg-primary text-slate-50 dark:bg-primary-focus'
+                              'bg-primary text-slate-50 dark:bg-slate-700 dark:text-slate-50'
                           )}
                         >
                           {label}
