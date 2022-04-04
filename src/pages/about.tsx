@@ -22,18 +22,14 @@ export default function AboutPage() {
           <div className='flex flex-col py-8 sm:py-12 sm:px-14'>
             <div className='prose prose-slate dark:prose-invert lg:prose-xl'>
               <p>
-                I am Adham Tarek, a Frontend Developer from Egypt. I completed
-                my degree with a Bachelor of Computer Science from Mansoura
-                University.
+                Hello! I&apos;m Adham, a Frontend Developer. this website to
+                showcase my projects in web development.
               </p>
               <p>
-                I am experienced in Javascript, React, Redux, TypeScript,
-                Next.js, etc.
-              </p>
-              <p>
-                I am a passionate person who loves to learn new things and solve
-                problems. I am a self-taught developer and I am always looking
-                for new challenges.
+                There are a lot of things and technologies to learn in frontend
+                development and I am motivated to learn as much as possible. I
+                enjoy learning something new and getting feedback to make myself
+                better and improve.
               </p>
               <p>
                 I like to design and build beautiful and functional websites and
