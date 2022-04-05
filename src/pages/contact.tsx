@@ -64,6 +64,7 @@ export default function ContactUSPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   name='name'
+                  required
                   className='
             dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
@@ -77,11 +78,11 @@ export default function ContactUSPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type='email'
+                  required
                   className='
             dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
                   placeholder='Your.Email@example.com'
-                  required
                 />
               </label>
               <label className='mb-6 block'>
@@ -90,6 +91,7 @@ export default function ContactUSPage() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   name='message'
+                  required
                   className='
             block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
@@ -119,7 +121,7 @@ export default function ContactUSPage() {
                 >
                   Send
                 </button>
-                <div></div>
+                {submitted && <p>Message sent</p>}
               </div>
             </form>
           </div>

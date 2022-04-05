@@ -55,35 +55,45 @@
 
 // export default sendEmail;
 
-// import { NextApiRequest, NextApiResponse } from 'next';
-// import nodemailer from 'nodemailer';
+// // import { NextApiRequest, NextApiResponse } from 'next';
 
-// export default function hello(req: NextApiRequest, res: NextApiResponse) {
-//   const transporter = nodemailer.createTransport({
-//     port: 465,
-//     host: 'smtp.gmail.com',
-//     auth: {
-//       user: 'demo email',
-//       pass: process.env.password,
-//     },
-//     secure: true,
-//   });
-//   const mailData = {
-//     from: 'demo email',
-//     to: 'your email',
-//     subject: `Message From ${req.body.name}`,
-//     text: req.body.message + ' | Sent from: ' + req.body.email,
-//     html: `<div>${req.body.message}</div><p>Sent from:
-//     ${req.body.email}</p>`,
-//   };
-//   transporter.sendMail(mailData, function (err, info) {
-//     if (err) console.log(err);
-//     else console.log(info);
-//   });
-//   res.status(200);
-// }
+// // import { sendEmail } from '../../utils/sendEmail';
+
+// // // eslint-disable-next-line import/no-anonymous-default-export
+// // export default async (req: NextApiRequest, res: NextApiResponse) => {
+// //   if (req.method === 'POST') {
+// //     const { name, email, message } = req.body;
+// //     await sendEmail({ name, email, message });
+// //     return res.status(200).end();
+// //   }
+// //   return res.status(404).json({
+// //     error: {
+// //       code: 'not_found',
+// //       messgae:
+// //         "The requested endpoint was not found or doesn't support this method.",
+// //     },
+// //   });
+// // };
+import sgMail from '@sendgrid/mail';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default function hello(req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).json({ name: 'adham tarek' });
+sgMail.setApiKey(process.env.SENDGRID_API_KEY as never);
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  const { name, email, message } = req.body;
+  const msg = {
+    to: 'adhamtarek291@gmail.com', // Change to your recipient
+    from: 'adhamtarek291@gmail.com', // Change to your verified sender
+    subject: 'Contact',
+    html: `<p><strong>name: </strong>${name}</p>
+    <p><strong>email: </strong>${email}</p>    
+    <p><strong>message: </strong>${message}</p>`,
+  };
+  await sgMail.send(msg);
+  // eslint-disable-next-line no-console
+  console.log('email sent');
+  res.status(200).json({ success: true });
 }
