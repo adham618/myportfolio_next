@@ -4,8 +4,13 @@ import sayHello from '@/lib/sayHello';
 
 import Footer from './Footer';
 import Header from './Header';
+let saidHello = !true;
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  sayHello();
+  if (!saidHello) {
+    sayHello();
+    saidHello = true;
+  }
   return (
     <>
       <Header />
