@@ -107,6 +107,7 @@ export default function ContactUSPage() {
                   }}
                   className='
             focus:shadow-outline
+            mb-2
             rounded-lg
             bg-primary-focus
             px-7
