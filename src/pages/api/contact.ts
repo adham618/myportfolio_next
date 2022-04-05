@@ -30,14 +30,14 @@ export default async function handler(
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${name}, their email is: ✉️${email} </h3>
+              <h3>You've got a new email from your contact from in your<a href="https://adhamtarek.vercel.app" style="text-decoration: none;margin: 8px;color: #9CA3AF;>site</a>  from ${name}, his email is: ✉️${email} </h3>
               <div style="font-size: 16px;">
               <p>Message:</p>
               <p>${message}</p>
               <br>
               </div>
-              <img src="https://adhamtarek.vercel.app/logo.png" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Manu Arora<br>Software Developer<br>+91 9587738861</p>
+              <img src="https://adhamtarek.vercel.app/logo.png" class="logo-image" style="height: 50px;width: 100px;border-radius: 5px;overflow: hidden;">
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Adham Tarek<br>Software Developer<br>+201015710812</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://adhamtarek.vercel.app" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Blog</a>
                 <a href="https://github.com/adham618/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
