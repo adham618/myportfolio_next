@@ -62,6 +62,7 @@ export default function ContactUSPage() {
                 <input
                   type='text'
                   value={name}
+                  maxLength={20}
                   onChange={(e) => setName(e.target.value)}
                   name='name'
                   required
@@ -75,6 +76,7 @@ export default function ContactUSPage() {
                 Email Address
                 <input
                   name='email'
+                  pattern='/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type='email'
@@ -127,12 +129,7 @@ export default function ContactUSPage() {
                     <span className='font-medium'>Alright!</span> Message sent
                     successfully.
                   </p>
-                ) : (
-                  <p className='mt-2 text-sm text-green-600 dark:text-green-500'>
-                    <span className='font-medium'>Sorry!</span> Message not
-                    sent.
-                  </p>
-                )}
+                ) : null}
               </div>
             </form>
           </div>
