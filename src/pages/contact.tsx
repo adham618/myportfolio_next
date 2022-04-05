@@ -119,9 +119,19 @@ export default function ContactUSPage() {
             dark:hover:bg-gray-800
           '
                 >
-                  Send
+                  Submit
                 </button>
-                {submitted && <p>Message sent</p>}
+                {submitted ? (
+                  <p className='mt-2 text-sm text-green-600 dark:text-green-500'>
+                    <span className='font-medium'>Alright!</span> Message sent
+                    successfully.
+                  </p>
+                ) : (
+                  <p className='mt-2 text-sm text-green-600 dark:text-green-500'>
+                    <span className='font-medium'>Sorry!</span> Message not
+                    sent.
+                  </p>
+                )}
               </div>
             </form>
           </div>
