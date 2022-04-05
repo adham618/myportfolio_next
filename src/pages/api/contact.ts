@@ -36,7 +36,7 @@ export default async function handler(
               <p>${message}</p>
               <br>
               </div>
-              <img src="https://adhamtarek.vercel.app/logo.png" class="logo-image" style="height: 50px;width: 100px;border-radius: 5px;overflow: hidden;">
+              <img src="https://adhamtarek.vercel.app/logo.png" class="logo-image" style="height: 50px;width: 120px;border-radius: 5px;overflow: hidden;">
               <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Adham Tarek<br>Software Developer<br>+201015710812</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://adhamtarek.vercel.app" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Blog</a>
