@@ -1,26 +1,26 @@
-/* eslint-disable no-console */
 import * as React from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Layout from '@/components/Layout';
 import Seo from '@/components/Seo';
 import StrokeTitle from '@/components/StrokeTitle';
-
+interface IFormInput {
+  name: string;
+  email: string;
+  message: string;
+}
 export default function ContactUSPage() {
-  // States for contact form fields
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [message, setMessage] = React.useState('');
-  // eslint-disable-next-line unused-imports/no-unused-vars
   const [submitted, setSubmitted] = React.useState(false);
+
+  // States for contact form fields
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IFormInput>({ mode: 'onBlur' });
+
   //   Handling form submit
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    console.log('Sending');
-    const data = {
-      name,
-      email,
-      message,
-    };
+  const onSubmit: SubmitHandler<IFormInput> = (data) => {
     fetch('/api/contact', {
       method: 'POST',
       headers: {
@@ -28,18 +28,37 @@ export default function ContactUSPage() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
-    }).then((res) => {
-      console.log('Response received');
-      if (res.status === 200) {
-        console.log('Response succeeded!');
+    })
+      .then(() => {
         setSubmitted(true);
-        setName('');
-        setEmail('');
-        setMessage('');
-      }
-    });
+      })
+      .catch(() => {
+        setSubmitted(false);
+      });
   };
 
+  //   Handling form registerOptions
+  const registerOptions = {
+    name: {
+      required: 'The Name Field is required',
+      minLength: {
+        value: 2,
+        message: 'The Name Field must be at least 2 characters',
+      },
+      maxLength: {
+        value: 20,
+        message: 'The Name Field must be at most 20 characters',
+      },
+    },
+    email: {
+      required: 'The Email Field is required',
+      pattern: {
+        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+        message: 'Invalid email address',
+      },
+    },
+    message: { required: 'The Message Field is required' },
+  };
   return (
     <Layout>
       <Seo templateTitle='Contact Me' />
@@ -56,57 +75,57 @@ export default function ContactUSPage() {
             </p>
           </div>
           <div className='flex flex-col justify-center py-14 sm:px-14'>
-            <form onSubmit={handleSubmit} className='prose dark:prose-invert'>
-              <label className='mb-6 block'>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className='prose dark:prose-invert'
+            >
+              <label className='mb-3 block'>
                 Your Name
                 <input
                   type='text'
-                  value={name}
+                  {...register('name', registerOptions.name)}
                   maxLength={20}
-                  onChange={(e) => setName(e.target.value)}
+                  minLength={2}
                   name='name'
-                  required
-                  className='
-            dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
+                  className='dark:shadow-sm-light
+            mb-5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
                   placeholder='Your Name'
                 />
+                <span className='text-red-500'>{errors?.name?.message}</span>
               </label>
-              <label className='mb-6 block'>
+              <label className='mb-3 block'>
                 Email Address
                 <input
+                  {...register('email', registerOptions.email)}
                   name='email'
-                  pattern='/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   type='email'
                   required
-                  className='
-            dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
+                  className='dark:shadow-sm-light
+            mb-5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
                   placeholder='Your.Email@example.com'
                 />
+                <span className='text-red-500'>{errors?.email?.message}</span>
               </label>
-              <label className='mb-6 block'>
+              <label className='mb-3 block'>
                 Message
                 <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  {...register('message', registerOptions.message)}
                   name='message'
                   required
-                  className='
+                  className='mb-5
             block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
                   rows={6}
                   placeholder="Tell me what you're thinking about..."
                 ></textarea>
+                <span className='text-red-500'>{errors?.message?.message}</span>
               </label>
               <div className='mb-6'>
                 <button
                   type='submit'
-                  onClick={(e) => {
-                    handleSubmit(e);
-                  }}
+                  onClick={handleSubmit(onSubmit)}
                   className='
             focus:shadow-outline
             mb-2
@@ -124,12 +143,12 @@ export default function ContactUSPage() {
                 >
                   Submit
                 </button>
-                {submitted ? (
+                {submitted && (
                   <p className='mt-2 text-sm text-green-600 dark:text-green-500'>
                     <span className='font-medium'>Alright!</span> Message sent
                     successfully.
                   </p>
-                ) : null}
+                )}
               </div>
             </form>
           </div>
