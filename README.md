@@ -5,7 +5,7 @@ A personal portfolio website that showcases my feature projects, technical skill
 ## Preview
 
 ![screenshot](https://user-images.githubusercontent.com/88515844/161386425-4b88640f-3999-4695-9347-f12d09560f4c.png)
-![screenshot2](https://user-images.githubusercontent.com/88515844/161386427-47cd1351-3761-457c-9068-780b4e9b40a0.png)
+![screenshot](https://user-images.githubusercontent.com/88515844/161796143-0e711ef1-678b-4637-9a52-6ddc53aa8420.png)
 ![screenshot3](https://user-images.githubusercontent.com/88515844/161386436-d6bd09cb-314a-485c-91b6-331720118379.png)
 
 ## **[Live Demo](https://adhamtarek.vercel.app/)**
