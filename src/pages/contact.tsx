@@ -9,6 +9,7 @@ interface IFormInput {
   name: string;
   email: string;
   message: string;
+  ReCAPTCHA: string;
 }
 export default function ContactUSPage() {
   const [showElement, setShowElement] = React.useState(false);
@@ -21,7 +22,7 @@ export default function ContactUSPage() {
     register,
     handleSubmit,
     setValue,
-    formState: { errors },
+    formState: { errors, isSubmitting, touchedFields },
   } = useForm<IFormInput>({ mode: 'onChange' });
 
   //   Handling form submit
@@ -46,6 +47,7 @@ export default function ContactUSPage() {
       })
       .catch(() => {
         setSubmitted(false);
+        alert('Something went wrong, please try again!');
       });
   };
 
@@ -70,6 +72,7 @@ export default function ContactUSPage() {
       },
     },
     message: { required: 'The Message Field is required' },
+    ReCAPTCHA: { required: 'The ReCAPTCHA Field is required' },
   };
   return (
     <Layout>
@@ -112,11 +115,10 @@ export default function ContactUSPage() {
                   {...register('email', registerOptions.email)}
                   name='email'
                   type='email'
-                  required
                   className='dark:shadow-sm-light
             mb-5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
-                  placeholder='Your.Email@example.com'
+                  placeholder='Your Email'
                 />
                 <span className='text-red-500'>{errors?.email?.message}</span>
               </label>
@@ -125,7 +127,6 @@ export default function ContactUSPage() {
                 <textarea
                   {...register('message', registerOptions.message)}
                   name='message'
-                  required
                   className='mb-5
             block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500
           '
@@ -134,15 +135,27 @@ export default function ContactUSPage() {
                 ></textarea>
                 <span className='text-red-500'>{errors?.message?.message}</span>
               </label>
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                //size='invisible'
-                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as never}
-              />
+              {touchedFields.name &&
+                touchedFields.email &&
+                touchedFields.message && (
+                  <div {...register('ReCAPTCHA', registerOptions.ReCAPTCHA)}>
+                    <ReCAPTCHA
+                      ref={recaptchaRef}
+                      sitekey={
+                        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as never
+                      }
+                    />
+                    <span className='text-red-500'>
+                      {errors?.ReCAPTCHA?.message}
+                    </span>
+                  </div>
+                )}
+
               <div className='mb-6 mt-4'>
                 <button
                   type='submit'
                   onClick={handleSubmit(onSubmit)}
+                  disabled={isSubmitting}
                   className='
             focus:shadow-outline
             mb-2
