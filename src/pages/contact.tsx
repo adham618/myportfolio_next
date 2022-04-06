@@ -11,6 +11,7 @@ interface IFormInput {
   message: string;
 }
 export default function ContactUSPage() {
+  const [showElement, setShowElement] = React.useState(false);
   const recaptchaRef = React.useRef(null);
 
   const [submitted, setSubmitted] = React.useState(false);
@@ -38,6 +39,10 @@ export default function ContactUSPage() {
         setValue('name', '');
         setValue('email', '');
         setValue('message', '');
+        setShowElement(true);
+        setTimeout(function () {
+          setShowElement(false);
+        }, 3000);
       })
       .catch(() => {
         setSubmitted(false);
@@ -155,11 +160,15 @@ export default function ContactUSPage() {
                 >
                   Submit
                 </button>
-                {submitted && (
-                  <p className='mt-2 text-sm text-green-600 dark:text-green-500'>
-                    <span className='font-medium'>Alright!</span> Message sent
-                    successfully.
-                  </p>
+                {showElement && (
+                  <>
+                    {submitted && (
+                      <p className='mt-2 text-sm text-green-600 dark:text-green-500'>
+                        <span className='font-medium'>Alright!</span> Message
+                        sent successfully.
+                      </p>
+                    )}
+                  </>
                 )}
               </div>
             </form>
