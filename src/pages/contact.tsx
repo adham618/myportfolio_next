@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Layout from '@/components/Layout';
@@ -10,17 +11,20 @@ interface IFormInput {
   message: string;
 }
 export default function ContactUSPage() {
+  const recaptchaRef = React.useRef(null);
+
   const [submitted, setSubmitted] = React.useState(false);
 
   // States for contact form fields
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm<IFormInput>({ mode: 'onChange' });
 
   //   Handling form submit
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     fetch('/api/contact', {
       method: 'POST',
       headers: {
@@ -31,6 +35,9 @@ export default function ContactUSPage() {
     })
       .then(() => {
         setSubmitted(true);
+        setValue('name', '');
+        setValue('email', '');
+        setValue('message', '');
       })
       .catch(() => {
         setSubmitted(false);
@@ -122,7 +129,12 @@ export default function ContactUSPage() {
                 ></textarea>
                 <span className='text-red-500'>{errors?.message?.message}</span>
               </label>
-              <div className='mb-6'>
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                //size='invisible'
+                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as never}
+              />
+              <div className='mb-6 mt-4'>
                 <button
                   type='submit'
                   onClick={handleSubmit(onSubmit)}
