@@ -17,7 +17,7 @@ export default function ContactUSPage() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<IFormInput>({ mode: 'onBlur' });
+  } = useForm<IFormInput>({ mode: 'onChange' });
 
   //   Handling form submit
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
