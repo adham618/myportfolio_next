@@ -142,7 +142,7 @@ export default function ContactUSPage() {
                     <ReCAPTCHA
                       ref={recaptchaRef}
                       sitekey={
-                        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as never
+                        process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string
                       }
                     />
                     <span className='text-red-500'>
