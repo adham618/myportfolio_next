@@ -6,7 +6,7 @@ import StrokeTitle from '../StrokeTitle';
 
 export default function Intro() {
   return (
-    <section className='layout gap-y-12 py-20 md:pt-28'>
+    <section className='layout gap-y-12 py-20 pb-12 md:pt-24'>
       <div className='flex flex-col items-center justify-center text-center'>
         <div className='mb-11 max-w-3xl sm:max-w-5xl'>
           <StrokeTitle
