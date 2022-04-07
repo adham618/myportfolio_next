@@ -6,17 +6,11 @@ import StrokeTitle from '../StrokeTitle';
 
 export default function Intro() {
   return (
-    <section className='layout gap-y-12 py-20'>
+    <section className='layout md:pt-25 gap-y-12 py-20'>
       <div className='flex flex-col items-center justify-center text-center'>
         <div className='mb-11 max-w-3xl sm:max-w-5xl'>
           <StrokeTitle
             title={
-              // <>
-              //   YOUR PARTNER{' '}
-              //   <span className='font-thin text-black dark:text-white'>—</span>{' '}
-              //   IN <span className='text-black dark:text-white'>DESIGN</span> &{' '}
-              //   <span className='text-black dark:text-white'>DEVELOPMENT</span>
-              // </>
               <>
                 Hello I am{' '}
                 <span className='text-black dark:text-white'>Adham Tarek</span>{' '}
