@@ -72,7 +72,7 @@ export default function ContactUSPage() {
       },
     },
     message: { required: 'The Message Field is required' },
-    ReCAPTCHA: { required: 'The ReCAPTCHA Field is required' },
+    ReCAPTCHA: { required: 'Please Confirm You Are Not a Robot' },
   };
   return (
     <Layout>
