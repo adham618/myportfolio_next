@@ -44,7 +44,7 @@ export default function Header() {
           className='cursor-pointer text-primary'
           onClick={() => router.push('/')}
         >
-          <Logo width='135' height='35' className='dark:text-gray-200' />
+          <Logo width='140' height='60' className='dark:text-gray-200' />
         </div>
         <div className='flex items-center justify-between '>
           <nav className='mr-5 hidden flex-none md:block'>
