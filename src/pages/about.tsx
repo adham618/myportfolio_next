@@ -22,8 +22,8 @@ export default function AboutPage() {
           <div className='flex flex-col py-8 sm:py-12 sm:px-14'>
             <div className='prose prose-slate dark:prose-invert lg:prose-xl'>
               <p>
-                Hello! I&apos;m Adham, a Frontend Developer. this website to
-                showcase my projects in web development.
+                Hello! My name is Adham Tarek, a Frontend Engineer. this website
+                to showcase my projects in web development.
               </p>
               <p>
                 There are a lot of things and technologies to learn in frontend
@@ -34,8 +34,18 @@ export default function AboutPage() {
               <p>
                 I like to design and build beautiful and functional websites and
                 web applications, taking special care to produce clear and
-                understandable code. I love teamwork and good communication,am
-                always open to feedback and willing to learn new things.
+                understandable code.
+              </p>
+              <p>
+                I can convert any design of any complexity into amazing work
+                using HTML, CSS, Bootstrap, TailwindCSS and Sass, and can build
+                the web project for you using React, Redux, Next js, Material
+                UI, and Firebase.
+              </p>
+              <p>
+                The websites you will get is always be pixel-perfect,
+                SEO-friendly, responsive, mobile-optimized, w3c validated and
+                the style is always consistent and centralized.
               </p>
             </div>
             <div className='flex justify-center'>
