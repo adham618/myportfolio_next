@@ -83,8 +83,8 @@ export default function Header() {
                     onClick={() => router.push('/')}
                   >
                     <Logo
-                      width='135'
-                      height='35'
+                      width='140'
+                      height='60'
                       className='dark:text-gray-200'
                     />
                   </div>
