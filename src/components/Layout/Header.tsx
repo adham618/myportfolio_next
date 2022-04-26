@@ -44,7 +44,7 @@ export default function Header() {
           className='cursor-pointer text-primary'
           onClick={() => router.push('/')}
         >
-          <Logo width='140' height='60' className='dark:text-gray-200' />
+          <Logo width='140' height='40' className='dark:text-gray-200' />
         </div>
         <div className='flex items-center justify-between '>
           <nav className='mr-5 hidden flex-none md:block'>
@@ -73,7 +73,7 @@ export default function Header() {
                 className='absolute top-0 left-0 h-screen w-full cursor-pointer bg-dark opacity-30 md:hidden'
               ></div>
               <nav className=' absolute top-0 left-0 h-screen bg-white dark:bg-primary md:hidden'>
-                <div className='m-4'>
+                <div className='m-4 h-16'>
                   <IoClose
                     onClick={() => setopen(!open)}
                     className='absolute right-3 inline-block h-9 w-9  cursor-pointer stroke-current   p-1 hover:rounded-md hover:bg-slate-200 focus:outline-none dark:text-slate-200 dark:hover:bg-opacity-40'
@@ -84,12 +84,12 @@ export default function Header() {
                   >
                     <Logo
                       width='140'
-                      height='60'
-                      className='dark:text-gray-200'
+                      height='40'
+                      className='ml-5 dark:text-gray-200'
                     />
                   </div>
                 </div>
-                <ul className='mt-8 flex w-72 flex-col overflow-y-auto'>
+                <ul className='flex w-72 flex-col overflow-y-auto'>
                   {links.map(({ href, label }) => (
                     <li
                       key={`${href}${label}`}
