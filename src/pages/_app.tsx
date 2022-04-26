@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     Router.events.on('routeChangeError', () => stop());
   }, []);
   return (
-    <ThemeProvider attribute='class' defaultTheme='dark'>
+    <ThemeProvider attribute='class' defaultTheme='system'>
       <ClientOnlyPortal selector='#__next'>
         <Component {...pageProps} />
       </ClientOnlyPortal>
