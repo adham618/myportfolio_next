@@ -43,5 +43,13 @@ const projectsData = [
     GithubLink: 'https://github.com/adham618/magic-memory',
     content: 'a simple memory game with react js',
   },
+  {
+    id: 5,
+    image: '/images/ezServicesHub.png',
+    title: 'ezServicesHub',
+    siteLink: 'https://ez-service-hub.vercel.app/',
+    GithubLink: 'https://github.com/adham618/ez-service-hub',
+    content: 'Figma to HTML for a client on Upwork',
+  },
 ];
 export default projectsData;
