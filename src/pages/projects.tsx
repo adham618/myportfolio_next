@@ -24,16 +24,20 @@ export default function ProjectsPage() {
             </p>
           </div>
           <div className='flex flex-col justify-center pt-20 pb-2'>
-            {projectsData.map((project) => (
-              <Project
-                key={project.id}
-                image={project.image}
-                title={project.title}
-                siteLink={project.siteLink}
-                GithubLink={project.GithubLink}
-                content={project.content}
-              />
-            ))}
+            {projectsData
+              .sort((a, b) => {
+                return b.id - a.id;
+              })
+              .map((project) => (
+                <Project
+                  key={project.id}
+                  image={project.image}
+                  title={project.title}
+                  siteLink={project.siteLink}
+                  GithubLink={project.GithubLink}
+                  content={project.content}
+                />
+              ))}
           </div>
         </section>
       </main>

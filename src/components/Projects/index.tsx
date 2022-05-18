@@ -18,16 +18,21 @@ export default function Projects() {
         </p>
       </div>
       <div className='flex flex-col justify-center pt-20 pb-2'>
-        {projectsData.slice(0, 4).map((project) => (
-          <Project
-            key={project.id}
-            image={project.image}
-            title={project.title}
-            siteLink={project.siteLink}
-            GithubLink={project.GithubLink}
-            content={project.content}
-          />
-        ))}
+        {projectsData
+          .sort((a, b) => {
+            return b.id - a.id;
+          })
+          .slice(0, 4)
+          .map((project) => (
+            <Project
+              key={project.id}
+              image={project.image}
+              title={project.title}
+              siteLink={project.siteLink}
+              GithubLink={project.GithubLink}
+              content={project.content}
+            />
+          ))}
       </div>
       <div className='flex justify-center'>
         <ButtonLink
