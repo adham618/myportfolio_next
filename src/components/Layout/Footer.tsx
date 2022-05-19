@@ -20,7 +20,7 @@ export default function Footer() {
         <FeedbackFish
           projectId={process.env.NEXT_PUBLIC_FEEDBACKFISH as string}
         >
-          <button className=''>Got any feedback?</button>
+          <button className='border-none'>Got any feedback?</button>
         </FeedbackFish>
         <div className='mt-3 grid grid-flow-col gap-4'>
           <Tooltip

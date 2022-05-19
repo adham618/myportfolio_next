@@ -14,7 +14,7 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label='theme toggle'
-      className='p-2 hover:rounded-full hover:bg-slate-200 focus:outline-none  dark:text-slate-200 dark:hover:bg-opacity-40'
+      className='border-none p-2 hover:rounded-full hover:bg-slate-200 focus:outline-none  dark:text-slate-200 dark:hover:bg-opacity-40'
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       {theme === 'light' && loaded ? (
