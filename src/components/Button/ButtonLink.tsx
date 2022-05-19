@@ -22,6 +22,7 @@ export default function ButtonLink({
           'rounded-md border border-black bg-transparent px-5 py-4 transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black',
           className
         )}
+        {...rest}
       >
         {content}
       </a>
