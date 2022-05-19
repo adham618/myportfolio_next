@@ -33,6 +33,7 @@ export default function Intro() {
           className='flex items-center justify-center border-0 border-none bg-rose-500 px-12 text-center text-slate-50 hover:bg-rose-600 dark:hover:bg-rose-600 dark:hover:text-slate-50'
           href='#contact'
           content="Let's Get Started!"
+          style={{ border: 'none' }}
         />
       </div>
     </section>
