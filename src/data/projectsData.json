@@ -1,0 +1,50 @@
+[
+  {
+    "GithubLink": "https://github.com/adham618/magic-memory",
+    "content": "a simple memory game with react js",
+    "id": 0,
+    "image": "/images/game.png",
+    "siteLink": "https://magic-memory-chi.vercel.app/",
+    "title": "Magic Memory"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/instagram-clone",
+    "content": "Instagram Clone with nextjs, typescript, tailwind CSS, Firebase v9, NextAuth, Recoil",
+    "id": 1,
+    "image": "/images/insta.png",
+    "siteLink": "http://instagram-clone-ruddy.vercel.app/",
+    "title": "Instagram Clone"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/hulu-clone",
+    "content": "Hulu Website Clone with nextjs, typescript, tailwind CSS, and API from TheMovieDB",
+    "id": 2,
+    "image": "/images/hulu.png",
+    "siteLink": "https://hulu-clone-with-typescript.vercel.app/",
+    "title": "Hulu Website Clone"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/medium-clone",
+    "content": "Medium Clone Using Next JS && TypeScript && Tailwind-CSS && Sanity-CMS.",
+    "id": 3,
+    "image": "/images/medium.png",
+    "siteLink": "http://medium-clone-black.vercel.app",
+    "title": "Medium Clone"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/ez-service-hub",
+    "content": "Figma to HTML for a client on Upwork",
+    "id": 4,
+    "image": "/images/ezServicesHub.png",
+    "siteLink": "https://ez-service-hub.vercel.app/",
+    "title": "ezServicesHub"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/foodo-landing-page",
+    "content": "A Landing Page Usign Next JS && TypeScript && React-Bootstrap For Food Delivery App",
+    "id": 5,
+    "image": "/images/foodo.png",
+    "siteLink": "https://foodo-landing-page-navy.vercel.app/",
+    "title": "Foodo Landing Page"
+  }
+]
