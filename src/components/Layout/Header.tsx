@@ -118,12 +118,12 @@ export default function Header() {
           <button
             aria-label='nav toggle'
             onClick={() => setopen(!open)}
-            className='ml-3 cursor-pointer p-1.5 hover:rounded-md hover:bg-slate-200 focus:outline-none dark:text-slate-200  dark:hover:bg-opacity-40 md:hidden  '
+            className='ml-3 cursor-pointer border-none p-1.5 hover:rounded-md hover:bg-slate-200 focus:outline-none  dark:text-slate-200 dark:hover:bg-opacity-40 md:hidden'
           >
             {open ? (
-              <IoClose className='inline-block h-7 w-7 border-none stroke-current dark:text-slate-200' />
+              <IoClose className='inline-block h-7 w-7 stroke-current dark:text-slate-200' />
             ) : (
-              <HiOutlineMenu className='inline-block h-7 w-7 border-none stroke-current checked:hidden dark:text-slate-200' />
+              <HiOutlineMenu className='inline-block h-7 w-7 stroke-current checked:hidden dark:text-slate-200' />
             )}
           </button>
         </div>
