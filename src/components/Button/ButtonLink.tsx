@@ -19,9 +19,10 @@ export default function ButtonLink({
     <Link href={href} {...rest}>
       <a
         className={clsxm(
-          'rounded-md border-2 border-black bg-transparent px-5 py-4 transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black',
+          'rounded-md border border-black bg-transparent px-5 py-4 transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black',
           className
         )}
+        style={'border: 1px solid #000;' as never}
       >
         {content}
       </a>
