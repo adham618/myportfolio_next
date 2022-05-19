@@ -25,24 +25,22 @@ export default function Contact() {
           </p>
         </div>
         <div className='mt-24 flex h-14 w-full flex-col items-center justify-center gap-4 sm:mt-11 sm:flex-row'>
-          <div className='rounded-md border border-black dark:border-white'>
-            <ButtonLink
-              href='/contact'
-              content={
-                <>
-                  <img
-                    className='h-6 w-6'
-                    width='24'
-                    height='24'
-                    src='/svg/gmail.svg'
-                    alt='email'
-                  />
-                  Send me an Email
-                </>
-              }
-              className='flex items-center justify-center gap-3 border text-center dark:border-white'
-            />{' '}
-          </div>
+          <ButtonLink
+            href='/contact'
+            content={
+              <>
+                <img
+                  className='h-6 w-6'
+                  width='24'
+                  height='24'
+                  src='/svg/gmail.svg'
+                  alt='email'
+                />
+                Send me an Email
+              </>
+            }
+            className='flex items-center justify-center rounded-md border border-black text-center dark:border-white'
+          />{' '}
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
             <PopupButton

@@ -47,7 +47,7 @@ export default function Projects() {
         <ButtonLink
           style={{ border: '1px solid #000' }}
           content='See More Projects'
-          className='flex items-center justify-center border text-center'
+          className='flex items-center justify-center rounded-md border border-black text-center dark:border-white'
           href='/projects'
         />
       </div>
