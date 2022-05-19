@@ -40,7 +40,7 @@ export default function Contact() {
                 Send me an Email
               </>
             }
-            className='flex items-center justify-center gap-3 border text-center'
+            className='flex items-center justify-center gap-3 border text-center dark:border-white'
           />{' '}
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
