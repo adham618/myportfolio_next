@@ -26,6 +26,7 @@ export default function Contact() {
         </div>
         <div className='mt-24 flex h-14 w-full flex-col items-center justify-center gap-4 sm:mt-11 sm:flex-row'>
           <ButtonLink
+            style={{ border: '1px solid #000' }}
             href='/contact'
             content={
               <>
@@ -39,7 +40,7 @@ export default function Contact() {
                 Send me an Email
               </>
             }
-            className='flex items-center justify-center rounded-md border border-black text-center dark:border-white'
+            className='flex items-center justify-center gap-3 border text-center dark:border-white'
           />{' '}
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
