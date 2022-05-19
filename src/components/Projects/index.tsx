@@ -45,6 +45,7 @@ export default function Projects() {
       </div>
       <div className='flex justify-center'>
         <ButtonLink
+          style={{ border: '1px solid #000' }}
           content='See More Projects'
           className='flex items-center justify-center border text-center'
           href='/projects'
