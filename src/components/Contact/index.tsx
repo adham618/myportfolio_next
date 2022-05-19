@@ -39,11 +39,12 @@ export default function Contact() {
                 Send me an Email
               </>
             }
-            className='flex items-center justify-center gap-3 text-center'
+            className='flex items-center justify-center gap-3 border text-center'
           />{' '}
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
             <PopupButton
+              className='rounded-md border border-black dark:border-white'
               url='https://calendly.com/adham-tarek'
               rootElement={document.getElementById('__next') as never}
               text={

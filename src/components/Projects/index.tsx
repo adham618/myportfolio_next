@@ -46,7 +46,7 @@ export default function Projects() {
       <div className='flex justify-center'>
         <ButtonLink
           content='See More Projects'
-          className='flex items-center justify-center text-center'
+          className='flex items-center justify-center border text-center'
           href='/projects'
         />
       </div>
