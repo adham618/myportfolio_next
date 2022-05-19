@@ -22,14 +22,14 @@ export default function AboutPage() {
           <div className='flex flex-col py-8 sm:py-12 sm:px-14'>
             <div className='prose prose-slate dark:prose-invert lg:prose-xl'>
               <p>
-                Hello! My name is Adham Tarek, a Frontend Engineer. this website
-                to showcase my projects in web development.
+                I&apos;m am a front-end developer from Egypt. I would like to
+                work on interesting projects. Anything from fixing already
+                existing pages to developing a website from scratch.
               </p>
               <p>
-                There are a lot of things and technologies to learn in frontend
-                development and I am motivated to learn as much as possible. I
-                enjoy learning something new and getting feedback to make myself
-                better and improve.
+                I&apos;m a hard-working guy who enjoys various things in life
+                such as arts with the web and all stuff that is connected with
+                web development, web design, and design at all.
               </p>
               <p>
                 I like to design and build beautiful and functional websites and
@@ -38,14 +38,38 @@ export default function AboutPage() {
               </p>
               <p>
                 I can convert any design of any complexity into amazing work
-                using HTML, CSS, Bootstrap, TailwindCSS and Sass, and can build
-                the web project for you using React, Redux, Next js, Material
+                using HTML, CSS, Bootstrap, TailwindCSS, or Sass, and can build
+                any web project for you using React, Redux, Next js, Material
                 UI, and Firebase.
               </p>
               <p>
-                The websites you will get is always be pixel-perfect,
-                SEO-friendly, responsive, mobile-optimized, w3c validated and
-                the style is always consistent and centralized.
+                My skills:
+                <br />
+                *** HTML/HTML5
+                <br />
+                *** CSS
+                <br />
+                *** JavaScript
+                <br />
+                *** TypeScript
+                <br />
+                *** Bootstrap
+                <br />
+                *** TailwindCSS
+                <br />
+                *** Reactjs
+                <br />
+                *** NextJS
+                <br />
+                *** StrapiHeadless CMS
+                <br />
+                *** Easy communication
+              </p>
+              <p>If that&apos;s what you need - please, contact me!</p>
+              <p>
+                Best regards,
+                <br />
+                Adham
               </p>
             </div>
             <div className='flex justify-center'>
