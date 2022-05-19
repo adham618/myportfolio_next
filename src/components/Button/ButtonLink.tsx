@@ -22,7 +22,7 @@ export default function ButtonLink({
         className
       )}
     >
-      <Link href={href} {...rest} passHref>
+      <Link href={href} {...rest}>
         <a {...rest}>{content}</a>
       </Link>
     </div>
