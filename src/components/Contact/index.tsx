@@ -26,7 +26,6 @@ export default function Contact() {
         </div>
         <div className='mt-24 flex h-14 w-full flex-col items-center justify-center gap-4 sm:mt-11 sm:flex-row'>
           <ButtonLink
-            style={{ border: '1px solid #000' }}
             href='/contact'
             content={
               <>
@@ -45,7 +44,6 @@ export default function Contact() {
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
             <PopupButton
-              className='rounded-md border border-black dark:border-white'
               url='https://calendly.com/adham-tarek'
               rootElement={document.getElementById('__next') as never}
               text={
