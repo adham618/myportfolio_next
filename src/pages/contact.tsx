@@ -160,6 +160,7 @@ export default function ContactUSPage() {
             focus:shadow-outline
             mb-2
             rounded-lg
+            border-solid
             bg-primary-focus
             px-7
             py-2
