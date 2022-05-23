@@ -44,6 +44,7 @@ export default function Contact() {
           <div className='opacity-50'>OR</div>{' '}
           <div className='inline-block'>
             <PopupButton
+              className='border-none'
               url='https://calendly.com/adham-tarek'
               rootElement={document.getElementById('__next') as never}
               text={
