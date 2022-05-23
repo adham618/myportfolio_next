@@ -12,7 +12,7 @@ import Logo from '@/components/Logo';
 export default function Footer() {
   const [copied, setcopied] = React.useState('Click The Mail Logo To Copy');
   return (
-    <footer className=' mx-auto w-full  bg-primary py-14 leading-loose'>
+    <footer className='absolute mx-auto w-full  bg-primary py-14 leading-loose'>
       <div className='layout text- flex flex-col items-center text-slate-200'>
         <Logo className='mb-5' width='200' />
         <p className='font-bold '>Providing reliable service since 2020</p>
