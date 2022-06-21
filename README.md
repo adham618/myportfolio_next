@@ -18,7 +18,7 @@ A personal portfolio website that showcases my feature projects, technical skill
 
 - **Tailwind-CSS**: CSS Framework
 
-- **Sanity-CMS**: Headless CMS
+- **Strapi**: Headless CMS
 
 - **React-Hook-Form**: Validate Forms In React
 
