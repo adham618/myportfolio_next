@@ -62,5 +62,21 @@
     "image": "/images/remitafrika-admin.jpg",
     "siteLink": "https://remitafrika-dashboard.vercel.app/",
     "title": "Remitafrika Admin Dashboard"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/iaminvestible",
+    "content": "figma to nextjs for a client on Upwork",
+    "id": 7,
+    "image": "/images/iaminvestiable.jpg",
+    "siteLink": "https://iaminvestible.vercel.app",
+    "title": "I am investable"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/iaminvestible",
+    "content": "Admin Dashboard for a client on Upwork",
+    "id": 7,
+    "image": "/images/iaminvestiable-admin.jpg",
+    "siteLink": "https://iaminvestible-admin.vercel.app",
+    "title": "I am investable Admin Dashboard"
   }
 ]
