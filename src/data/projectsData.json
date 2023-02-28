@@ -46,5 +46,21 @@
     "image": "/images/foodo.png",
     "siteLink": "https://foodo-landing-page-navy.vercel.app/",
     "title": "Foodo Landing Page"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/vmtycoon",
+    "content": "Figma to react,nextjs for a client on Upwork",
+    "id": 6,
+    "image": "/images/vmtycoon.jpg",
+    "siteLink": "https://vmtycoon.vercel.app/Home",
+    "title": "vmtycoon"
+  },
+  {
+    "GithubLink": "https://github.com/adham618/remitafrika-dashboard",
+    "content": "Admin dashboard for a client on Upwork",
+    "id": 7,
+    "image": "/images/remitafrika-admin.jpg",
+    "siteLink": "https://remitafrika-dashboard.vercel.app/",
+    "title": "Remitafrika Admin Dashboard"
   }
 ]
