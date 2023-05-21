@@ -38,7 +38,7 @@
     "image": "/images/iaminvestable-admin.jpg",
     "siteLink": "https://iaminvestible-admin.vercel.app",
     "title": "I am investable Admin Dashboard"
-  }, 
+  },
   {
     "GithubLink": "https://github.com/adham618/ghanaphysicians",
     "content": "ghanaphysicians.org new for a client on Upwork",
@@ -46,5 +46,5 @@
     "image": "/images/ghanaphysicians.jpg",
     "siteLink": "https://ghanaphysicians.vercel.app",
     "title": "Ghana physicians"
-  },
+  }
 ]
