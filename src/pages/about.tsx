@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import Layout from '@/components/Layout';
 import Seo from '@/components/Seo';
 import StrokeTitle from '@/components/StrokeTitle';
@@ -22,52 +20,42 @@ export default function AboutPage() {
           <div className='flex flex-col py-8 sm:py-12 sm:px-14'>
             <div className='prose prose-slate dark:prose-invert lg:prose-xl'>
               <p>
-                I&apos;m am a front-end developer from Egypt. I would like to
-                work on interesting projects. Anything from fixing already
-                existing pages to developing a website from scratch.
+                Hey there! I&apos;m Adham, a passionate front-end developer
+                calling Egypt home. I&apos;m all about diving into exciting
+                projects, whether it&apos;s revamping existing pages or crafting
+                something entirely new from scratch.
               </p>
               <p>
-                I&apos;m a hard-working guy who enjoys various things in life
-                such as arts with the web and all stuff that is connected with
-                web development, web design, and design at all.
+                Beyond the code, I&apos;m a creative soul who finds joy in all
+                things web-related. From the artistry of design to the
+                intricacies of development, I&apos;m constantly inspired by the
+                possibilities of the digital world.
               </p>
               <p>
-                I like to design and build beautiful and functional websites and
-                web applications, taking special care to produce clear and
-                understandable code.
+                When it comes to building websites and web applications, my goal
+                is simple: to create something beautiful and functional. I take
+                pride in writing code that&apos;s not just clean and
+                understandable, but also a joy to interact with.
               </p>
               <p>
-                I can convert any design of any complexity into amazing work
-                using HTML, CSS, Bootstrap, TailwindCSS, or Sass, and can build
-                any web project for you using React, Redux, Next js, Material
-                UI, and Firebase.
+                I&apos;m your go-to guy for transforming any design, no matter
+                how complex, into a stunning reality With Nextjs, React,
+                TypeScript, Tailwind CSS and more.
               </p>
               <p>
-                My skills:
-                <br />
-                *** HTML/HTML5
-                <br />
-                *** CSS
-                <br />
-                *** JavaScript
-                <br />
-                *** TypeScript
-                <br />
-                *** Bootstrap
-                <br />
-                *** TailwindCSS
-                <br />
-                *** Reactjs
-                <br />
-                *** NextJS
-                <br />
-                *** StrapiHeadless CMS
-                <br />
-                *** Easy communication
+                But what really sets me apart? It&apos;s my belief in the power
+                of communication. I&apos;m all about keeping the lines open,
+                collaborating closely with clients every step of the way to
+                ensure we&apos;re always on the same page.
               </p>
-              <p>If that&apos;s what you need - please, contact me!</p>
               <p>
-                Best regards,
+                So if you&apos;re on the lookout for someone who&apos;s not just
+                a developer, but a partner in your project, look no further.
+                Drop me a line, and let&apos;s create something amazing
+                together!
+              </p>
+              <p>
+                Best,
                 <br />
                 Adham
               </p>
