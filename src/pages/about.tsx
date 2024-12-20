@@ -62,7 +62,7 @@ export default function AboutPage() {
             </div>
             <div className='flex justify-center'>
               <a
-                href='/Frontend Developer(resume).pdf'
+                href='/AdhamTarekResume.pdf'
                 className='mt-16 rounded-md border border-primary-focus bg-primary-focus px-10 py-4 text-slate-200 transition-colors hover:bg-primary hover:text-slate-100 dark:border-slate-300 dark:bg-primary-focus dark:hover:bg-slate-200 dark:hover:text-black'
                 aria-label='my resume'
                 target='_blank'
